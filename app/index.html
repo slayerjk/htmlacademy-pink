@@ -10,13 +10,13 @@
 
   <title>TITLE</title>
 
-  <link rel="stylesheet" href="libs/jquery-ui.min.css">
+  <!--<link rel="stylesheet" href="libs/jquery-ui.min.css">-->
   <!--<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">-->
 
   <link href="css/style.min.css" rel="stylesheet">
-    
-  <!--<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">-->
-  <!--<link href="FONT" rel="stylesheet">-->
+
+  <link rel="icon" href="img/icons/favicon_32x32.ico">
+  <link rel="icon" href="img/icons/favicon_16x16.ico">
 
   <!--[if lt IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -24,18 +24,285 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="container">
-      <h1 class="h1">TEST!21</h1>
-      <a href="test.html" class="link">Test-page</a>
+  <header class="page-header">
+    <div class="page-header__wrapper wrapper-global">
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active">
+              Главная
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="pink-media.html" class="main-nav__link">
+              Фоографиии
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="pink-contest" class="main-nav__link">
+              Конкурс
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="https://htmlacademy.ru/" class="main-nav__link">
+              htmlacademy
+            </a>
+          </li>
+        </ul>
+        <div class="main-nav__logo">
+          <a class="main-nav__logo-link">
+            <picture>
+              <img class="main-nav__logo-img" src="img/logo-pink-white-mobile.svg" width="73" height="23" alt="pink-logo">
+            </picture>
+          </a>
+        </div>
+        <button class="main-nav__menu-toggle" type="button"></button>
+      </nav>
     </div>
   </header>
 
-  <main class="main-">
-    <div class="container">
-
+  <section class="intro intro--index">
+    <div class="intro__wrapper wrapper-global">
+      <a href="#" class="intro__download-link">
+        Скачать приложение
+      </a>
+      <div class="intro__os-icons">
+        <img class="intro__os-icon intro__os-icon--apple" src="img/logo-apple.svg" width="47" height="57" alt="apple-logo">
+        <img class="intro__os-icon intro__os-icon--android" src="img/logo-android.svg" width="43" height="48" alt="android-logo">
+        <img class="intro__os-icon intro__os-icon--microsoft" src="img/logo-microsoft.svg" width="44" height="42" alt="microsoft-logo">
+      </div>
+      <p class="intro__desc">
+        Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+      </p>
     </div>
-  </main>
+  </section>
+
+  <section class="app-info">
+    <div class="app-info__wrapper wrapper-global">
+      <div class="app-info__slogan-block">
+        <p class="app-info__slogan">
+          Устали от серости мегаполиса?
+        </p>
+        <p class="app-info__slogan">
+          Нам есть, что вам предложить!
+        </p>
+        <div class="app-info__decor"></div>
+      </div>
+      <div class="features">
+        <div class="features__item">
+          <h2 class="features__item-title">
+            Поднимает настроение
+          </h2>
+          <p class="features__item-desc">
+            Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+          </p>
+        </div>
+        <div class="features__item">
+          <h2 class="features__item-title">
+            Меняет мир вокруг
+          </h2>
+          <p class="features__item-desc">
+            Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+          </p>
+        </div>
+        <div class="features__item">
+          <h2 class="features__item-title">
+            Заводит новых друзей
+          </h2>
+          <p class="features__item-desc">
+            Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
+          </p>
+        </div>
+        <picture>
+          <img class="features__desc-img" src="img/iphone-screen-mobile@1x.png" width="157" height="320" srcset="img/iphone-screen-mobile@2x.png 2x" alt="iphone-img">
+        </picture>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews">
+    <div class="reviews__wrapper wrapper-global">
+      <div class="reviews__slider slider">
+        <input id="reviews-r1" class="reviews__slider-input slider__input" type="radio" name="reviews-input" value="reviews-r1" checked>
+        <input id="reviews-r2" class="reviews__slider-input slider__input" type="radio" name="reviews-input" value="reviews-r2">
+        <input id="reviews-r3" class="reviews__slider-input slider__input" type="radio" name="reviews-input" value="reviews-r3">
+        <div class="reviews__slider-switches slider__switches">
+          <label for="reviews-r1" class="reviews__slider-switch slider__switch"></label>
+          <label for="reviews-r2" class="reviews__slider-switch slider__switch"></label>
+          <label for="reviews-r3" class="reviews__slider-switch slider__switch"></label>
+          <div class="reviews__slider-wrapper slider__wrapper">
+            <div class="reviews__slide slider__slide">
+              <h3 class="reviews__review-author slider__slide-title">
+                Николай Петров
+              </h3>
+              <blockquote class="reviews__testimonial">
+                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+              </blockquote>
+            </div>
+            <div class="reviews__slide slider__slide">
+              <h3 class="reviews__review-author slider__slide-title">
+                Author2
+              </h3>
+              <blockquote class="reviews__testimonial">
+                «Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque reiciendis sequi ullam, dolorum! Eveniet pariatur suscipit voluptatum obcaecati harum expedita autem voluptas sint, vero, nisi quisquam mollitia corrupti, dolorem necessitatibus.»
+              </blockquote>
+            </div>
+            <div class="reviews__slide slider__slide">
+              <h3 class="reviews__review-author slider__slide-title">
+                Author3
+              </h3>
+              <blockquote class="reviews__testimonial">
+                «Lorem ipsum dolor sit amet, consectetur adipisicing elit. In neque doloremque ipsum dicta adipisci voluptatum dolores, quibusdam, atque vel optio architecto, consectetur. Inventore voluptates mollitia nemo, ipsam ad culpa vitae!»
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="prices">
+    <div class="prices__wrapper wrapper-global">
+      <div class="prices__slider slider">
+        <input id="prices-r1" class="prices__slider-input slider__input" type="radio" name="prices-input" value="prices-r1" checked>
+        <input id="prices-r2" class="prices__slider-input slider__input" type="radio" name="prices-input" value="prices-r2">
+        <input id="prices-r3" class="prices__slider-input slider__input" type="radio" name="prices-input" value="prices-r3">
+        <div class="prices__slider-switches slider__switches">
+          <label for="prices-r1" class="prices__slider-switch slider__switch"></label>
+          <label for="prices-r2" class="prices__slider-switch slider__switch"></label>
+          <label for="prices-r3" class="prices__slider-switch slider__switch"></label>
+          <div class="prices__slider-wrapper slider__wrapper">
+            <div class="prices__slide slider__slide">
+              <div class="prices__slide-title-block">
+                <span class="prices__hit-label">хит</span>
+                <h3 class="prices__slide-title">
+                  Стандарт
+                </h3>
+                <span class="prices__cost">
+                3,99 USD
+              </span>
+              </div>
+              <div class="prices__item">
+                <p class="prices__item-name">
+                  Розовый фильтр
+                </p>
+                <div class="prices__item-availability prices__item-availability--yes"></div>
+              </div>
+              <div class="prices__item">
+                <p class="prices__item-name">
+                  Смайлики
+                </p>
+                <div class="prices__item-availability prices__item-availability--yes"></div>
+              </div>
+              <div class="prices__item">
+                <p class="prices__item-name">
+                  Комментарии
+                </p>
+                <div class="prices__item-availability prices__item-availability--no"></div>
+              </div>
+            </div>
+            <div class="prices__slide slider__slide">
+              <div class="prices__slide-title-block">
+                <h3 class="prices__slide-title">
+                  Slide2
+                </h3>
+                <span class="prices__cost">
+                0,00 USD
+              </span>
+              </div>
+              <div class="prices__item">
+                <p class="prices__item-name">
+                  #######
+                </p>
+                <div class="prices__item-availability prices__item-availability--yes"></div>
+              </div>
+              <div class="prices__item">
+                <p class="prices__item-name">
+                  #######
+                </p>
+                <div class="prices__item-availability prices__item-availability--yes"></div>
+              </div>
+              <div class="prices__item">
+                <p class="prices__item-name">
+                  #######
+                </p>
+                <div class="prices__item-availability prices__item-availability--no"></div>
+              </div>
+            </div>
+            <div class="prices__slide slider__slide">
+              <div class="prices__slide-title-block">
+                <h3 class="prices__slide-title">
+                  Slide3
+                </h3>
+                <span class="prices__cost">
+                0,00 USD
+              </span>
+              </div>
+              <div class="prices__item">
+                <p class="prices__item-name">
+                  $$$$$$$
+                </p>
+                <div class="prices__item-availability prices__item-availability--yes"></div>
+              </div>
+              <div class="prices__item">
+                <p class="prices__item-name">
+                  $$$$$$$
+                </p>
+                <div class="prices__item-availability prices__item-availability--yes"></div>
+              </div>
+              <div class="prices__item">
+                <p class="prices__item-name">
+                  $$$$$$$
+                </p>
+                <div class="prices__item-availability prices__item-availability--no"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contacts">
+    <div class="contacts__Wrapper wrapper-global">
+      <p class="contacts__slogan">
+        Остались вопросы? Свяжитесь с нами!
+      </p>
+      <div class="contacts__section">
+        <h3 class="contacts__section-title">
+          Звоните
+        </h3>
+        <span class="contacts__section-info">
+          +7 (812) 555-66-66
+        </span>
+      </div>
+      <div class="contacts__section">
+        <h3 class="contacts__section-title">
+          Пишите:
+        </h3>
+        <span class="contacts__section-info">
+          mail@htmlacademy.ru
+        </span>
+      </div>
+      <div class="contacts__section">
+        <h3 class="contacts__section-title">
+          Приезжайте в гости:
+        </h3>
+        <span class="contacts__section-info">
+          ул. Большая Конюшенная, 19/8
+        </span>
+      </div>
+      <div class="contacts__decor"></div>
+      <div class="map">
+        <a href="https://www.google.kz/maps/search/%D1%83%D0%BB.+%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F+%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F,+19%2F8/@59.9375847,30.3201202,16.5z?hl=ru" class="map__link">
+          <picture>
+            <img class="map__img" src="img/bg-map-mobile@1x.png" width="320" height="421" srcset="img/bg-map-mobile@1x.png 2x" alt="map">
+          </picture>
+        </a>
+      </div>
+    </div>
+  </section>
 
   <footer class="footer">
     <div class="container">
@@ -45,10 +312,9 @@
 
   <div class="overlay"></div>
 
-<!-- Scripts______________________________________ -->
+  <!-- Scripts______________________________________ -->
   <script src="libs/jquery-3.2.1.min.js"></script>
-
-  <script src="libs/jquery-ui-1.12.1.min.js"></script>
+  <script src="js/picturefill.min.js"></script>
 
   <!--<script src="js/script.min.js"></script>-->
   <script src="js/script.js"></script>
