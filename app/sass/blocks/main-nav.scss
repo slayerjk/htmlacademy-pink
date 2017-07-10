@@ -1,0 +1,50 @@
+.main-nav {
+  position: relative;
+  outline: 1px solid red;
+}
+
+.main-nav__menu-toggle {
+  display: none;
+  position: absolute;
+  top: 15px;
+  right: 6.25%;
+  width: 50px;
+  height: 25px;
+  background: url("../img/icons/icon-menu-burger.svg") no-repeat center;
+  border: none;
+  outline: none;
+  &--active {
+    width: 24px;
+    height: 24px;
+    background: url("../img/icons/icon-menu-cross.svg") no-repeat center;
+  }
+}
+
+.main-nav__logo {
+  padding: {
+    top: 20px;
+    left: 6.25%;//20
+    right: 6.25%;
+    bottom: 25px;
+  }
+  background-color: $pink-indigo;
+  border-bottom: 1px solid #000;
+}
+
+.main-nav__link {
+  display: block;
+  width: 100%;
+  padding: {
+    top: 24px;
+    bottom: 21px;
+  }
+  font: bold 1.8rem/1.7777777778rem $opensans;//18/32
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: $pink-indigo;
+  border: {
+    top: 1px solid #485461;
+    bottom: 1px solid #000;
+  }
+}
