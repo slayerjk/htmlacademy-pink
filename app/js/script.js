@@ -13,12 +13,12 @@ $(document).ready(function () {
     }
   };
 /*-------------------------------------------------------*/
-  /*
+  
   if ($(window).width() < 768) {
     $('.main-nav__list').hide();
     $('.main-nav__menu-toggle').show();
   }
-  */
+  
     
   $('.main-nav__menu-toggle').on('click', function () {
     $('.main-nav__list').slideToggle('slow');

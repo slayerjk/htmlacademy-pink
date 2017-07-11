@@ -1,0 +1,84 @@
+.intro__wrapper {
+  background-color: #1d2631;
+}
+
+.intro__block-bg {
+  height: 401px;
+  background-color: #1d2631;
+  background: 
+    url("../../img/iphone-hand-mobile@1x.png") no-repeat 0% 95%,
+    url("../../img/bg-back-mobile@1x.jpg") no-repeat center 111%;
+  &--not-index {
+    height: 170px;
+    background: url("../../img/bg-back-mobile@1x.jpg") no-repeat center;
+    outline: 1px solid red;
+  }
+}
+
+.intro__title {
+  margin: 0;
+  padding-top: 28px;
+  font:  2.4rem $font-open-sans;//24
+  text-align: center;
+  color: #fff;
+}
+
+.intro__desc-block {
+  padding: {
+    top: 22px;
+    bottom: 29px;
+    left: 6.25%;
+    right: 6.25%;
+  }
+}
+
+.intro__download-link {
+  padding: {
+    top: 19px;
+    bottom: 20px;
+  }
+  font: bold 1.8rem/1rem $font-open-sans;//18/18
+  letter-spacing: 0.08rem;
+  text-align: center;
+  color: #fff;
+  border: 3px solid #fff;
+  border-radius: 30px;
+}
+
+.intro__os-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  padding: {
+    top: 30px;
+    left: 13.5%;//35px;
+    right: 13.5%;//35px;
+  }
+  outline: 1px solid red;
+}
+
+.intro__desc {
+  padding: {
+    top: 23px;
+  }
+  font: 100 1.4rem/1.7142857143em $font-open-sans;//14/24
+  text-align: center;
+  word-spacing: 0em;
+  color: #fff;
+  outline: 1px solid red;
+}
+
+//Retina 2x 320px
+@media only screen and (min-width: 320px) {
+  @media #{$retina} {
+    .intro__block-bg {
+      background: 
+        url("../img/iphone-hand-mobile@2x.png") no-repeat 0% 95%,
+        url("../img/bg-back-mobile@2x.jpg") no-repeat center 111%;
+      background-size: 
+        258px auto, 
+        700px auto;
+    }
+  }  
+}

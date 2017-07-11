@@ -1,6 +1,5 @@
 .main-nav {
   position: relative;
-  outline: 1px solid red;
 }
 
 .main-nav__menu-toggle {
@@ -38,7 +37,7 @@
     top: 24px;
     bottom: 21px;
   }
-  font: bold 1.8rem/1.7777777778rem $opensans;//18/32
+  font: bold 1.8rem/1.7777777778rem $font-open-sans;//18/32
   text-align: center;
   text-transform: uppercase;
   color: #fff;
