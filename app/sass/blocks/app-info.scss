@@ -1,0 +1,14 @@
+.app-info {
+  padding: {
+    top: 38px;
+    bottom: 33px;
+  }
+  text-align: center;
+  background-color: #fff;
+}
+
+.app-info__slogan {
+  font: 2.4em $font-open-sans-light;//24px
+  word-spacing: 0.001em;
+  color: $pink-indigo;
+}

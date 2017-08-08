@@ -6,7 +6,7 @@
   height: 401px;
   background-color: #1d2631;
   background: 
-    url("../../img/iphone-hand-mobile@1x.png") no-repeat 0% 95%,
+    url("../../img/iphone-hand-mobile@1x.png") no-repeat 0% 94.5%,
     url("../../img/bg-back-mobile@1x.jpg") no-repeat center 111%;
   &--not-index {
     height: 170px;
@@ -18,7 +18,7 @@
 .intro__title {
   margin: 0;
   padding-top: 28px;
-  font:  2.4rem $font-open-sans;//24
+  font:  2.4em $font-open-sans;//24
   text-align: center;
   color: #fff;
 }
@@ -26,7 +26,7 @@
 .intro__desc-block {
   padding: {
     top: 22px;
-    bottom: 29px;
+    bottom: 30px;
     left: 6.25%;
     right: 6.25%;
   }
@@ -34,11 +34,10 @@
 
 .intro__download-link {
   padding: {
-    top: 19px;
-    bottom: 20px;
+    top: 15px;
+    bottom: 17px;
   }
-  font: bold 1.8rem/1rem $font-open-sans;//18/18
-  letter-spacing: 0.08rem;
+  font: 1.8em/1em $font-open-sans-bold;//18/18
   text-align: center;
   color: #fff;
   border: 3px solid #fff;
@@ -62,9 +61,8 @@
   padding: {
     top: 23px;
   }
-  font: 100 1.4rem/1.7142857143em $font-open-sans;//14/24
+  font: 1.4em/1.7142857143em $font-open-sans-light;//14/24
   text-align: center;
-  word-spacing: 0em;
   color: #fff;
   outline: 1px solid red;
 }

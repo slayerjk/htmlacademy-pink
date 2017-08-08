@@ -6,3 +6,21 @@
     font-style: normal;
 	font-weight: normal;
 }
+
+@font-face {
+	font-family: "Open Sans Light";
+	src: 
+      url("../fonts/opensans-light.woff2") format("woff2"),
+      url("../fonts/opensans-light.woff") format("woff");
+    font-style: normal;
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: "Open Sans Bold";
+	src: 
+      url("../fonts/opensans-bold.woff2") format("woff2"),
+      url("../fonts/opensans-bold.woff") format("woff");
+    font-style: normal;
+	font-weight: 700;
+}
