@@ -1,7 +1,8 @@
-.app-info {
+.app-info__slogan-block {
+  position: relative;
   padding: {
-    top: 38px;
-    bottom: 33px;
+    top: 39px;
+    bottom: 0px;
   }
   text-align: center;
   background-color: #fff;
@@ -9,6 +10,21 @@
 
 .app-info__slogan {
   font: 2.4em $font-open-sans-light;//24px
-  word-spacing: 0.001em;
+  line-height: 1.25em;
   color: $pink-indigo;
+  &--question {
+    margin-bottom: 27px;
+  }
+}
+
+.app-info__decor {
+  position: absolute;
+  bottom: -90px;
+  left: 0;
+  width: 100%;
+  height: 95px;
+  background: url('../../img/bg-triangle-white.svg') no-repeat center;
+  background-size: cover;
+  z-index: 1;
+  outline: 1px solid red;
 }

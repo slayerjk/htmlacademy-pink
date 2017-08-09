@@ -1,0 +1,38 @@
+.features {
+  position: relative;
+  padding: {
+    top: 112px;
+    bottom: 318px;
+  }
+  text-align: center;
+  background-color: $pink-grey;
+  overflow: hidden;
+}
+
+.features__item {
+  margin-bottom: 33px;
+  padding: {
+    left: 7%;
+    right: 7%;
+  }
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.features__item-title {
+  margin-bottom: 12px;
+  font: 1.8em/1.3333333333em $font-open-sans-bold;//18/24
+  color: $pink-indigo;
+}
+
+.features__item-desc {
+  font: 1.4em/1.7142857143em $font-open-sans;//14/24
+  color: $pink-indigo;
+}
+
+.features__desc-img {
+  position: absolute;
+  bottom: -5%;
+  left: 25%;
+}

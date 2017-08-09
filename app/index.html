@@ -84,10 +84,10 @@
   <section class="app-info">
     <div class="app-info__wrapper wrapper-global">
       <div class="app-info__slogan-block">
-        <p class="app-info__slogan">
+        <p class="app-info__slogan app-info__slogan--question">
           Устали от серости мегаполиса?
         </p>
-        <p class="app-info__slogan">
+        <p class="app-info__slogan app-info__slogan--answer">
           Нам есть, что вам предложить!
         </p>
         <div class="app-info__decor"></div>
@@ -126,143 +126,144 @@
 
   <section class="reviews">
     <div class="reviews__wrapper wrapper-global">
-      <div class="reviews__slider slider">
-        <input id="reviews-r1" class="reviews__slider-input slider__input" type="radio" name="reviews-input" value="reviews-r1" checked>
-        <input id="reviews-r2" class="reviews__slider-input slider__input" type="radio" name="reviews-input" value="reviews-r2">
-        <input id="reviews-r3" class="reviews__slider-input slider__input" type="radio" name="reviews-input" value="reviews-r3">
-        <div class="reviews__slider-switches slider__switches">
-          <label for="reviews-r1" class="reviews__slider-switch slider__switch"></label>
-          <label for="reviews-r2" class="reviews__slider-switch slider__switch"></label>
-          <label for="reviews-r3" class="reviews__slider-switch slider__switch"></label>
-          <div class="reviews__slider-wrapper slider__wrapper">
-            <div class="reviews__slide slider__slide">
-              <h3 class="reviews__review-author slider__slide-title">
-                Николай Петров
-              </h3>
-              <blockquote class="reviews__testimonial">
-                «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-              </blockquote>
-            </div>
-            <div class="reviews__slide slider__slide">
-              <h3 class="reviews__review-author slider__slide-title">
-                Author2
-              </h3>
-              <blockquote class="reviews__testimonial">
-                «Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque reiciendis sequi ullam, dolorum! Eveniet pariatur suscipit voluptatum obcaecati harum expedita autem voluptas sint, vero, nisi quisquam mollitia corrupti, dolorem necessitatibus.»
-              </blockquote>
-            </div>
-            <div class="reviews__slide slider__slide">
-              <h3 class="reviews__review-author slider__slide-title">
-                Author3
-              </h3>
-              <blockquote class="reviews__testimonial">
-                «Lorem ipsum dolor sit amet, consectetur adipisicing elit. In neque doloremque ipsum dicta adipisci voluptatum dolores, quibusdam, atque vel optio architecto, consectetur. Inventore voluptates mollitia nemo, ipsam ad culpa vitae!»
-              </blockquote>
-            </div>
+      <div class="slider slider--reviews">
+        <input id="review-r1" class="slider__input" type="radio" name="reviews-input" value="review-r1" checked>
+        <input id="review-r2" class="slider__input" type="radio" name="reviews-input" value="review-r2">
+        <input id="review-r3" class="slider__input" type="radio" name="reviews-input" value="review-r3">
+        <div class="slider__switches slider__switches--reviews">
+          <label for="review-r1" class="slider__switch slider__switch--reviews"></label>
+          <label for="review-r2" class="slider__switch slider__switch--reviews"></label>
+          <label for="review-r3" class="slider__switch slider__switch--reviews"></label>
+        </div>
+        <div class="slider__wrapper slider__wrapper--reviews">
+          <div class="slider__slide slider__slide--reviews slider__slide--reviews-r1">
+            <h3 class="reviews__review-author">
+              Николай Петров
+            </h3>
+            <blockquote class="reviews__testimonial">
+              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+            </blockquote>
+          </div>
+          <div class="slider__slide slider__slide--reviews slider__slide--reviews-r2">
+            <h3 class="reviews__review-author">
+              Author2
+            </h3>
+            <blockquote class="reviews__testimonial">
+              «Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque reiciendis sequi ullam, dolorum! Eveniet pariatur suscipit voluptatum obcaecati harum expedita autem voluptas sint, vero, nisi quisquam mollitia corrupti, dolorem necessitatibus.»
+            </blockquote>
+          </div>
+          <div class="slider__slide slider__slide--reviews slider__slide--reviews-r3">
+            <h3 class="reviews__review-author">
+              Author3
+            </h3>
+            <blockquote class="reviews__testimonial">
+              «Lorem ipsum dolor sit amet, consectetur adipisicing elit. In neque doloremque ipsum dicta adipisci voluptatum dolores, quibusdam, atque vel optio architecto, consectetur. Inventore voluptates mollitia nemo, ipsam ad culpa vitae!»
+            </blockquote>
           </div>
         </div>
       </div>
+      <div class="reviews__decor"></div>
     </div>
   </section>
 
   <section class="prices">
     <div class="prices__wrapper wrapper-global">
-      <div class="prices__slider slider">
-        <input id="prices-r1" class="prices__slider-input slider__input" type="radio" name="prices-input" value="prices-r1" checked>
-        <input id="prices-r2" class="prices__slider-input slider__input" type="radio" name="prices-input" value="prices-r2">
-        <input id="prices-r3" class="prices__slider-input slider__input" type="radio" name="prices-input" value="prices-r3">
-        <div class="prices__slider-switches slider__switches">
-          <label for="prices-r1" class="prices__slider-switch slider__switch"></label>
-          <label for="prices-r2" class="prices__slider-switch slider__switch"></label>
-          <label for="prices-r3" class="prices__slider-switch slider__switch"></label>
-          <div class="prices__slider-wrapper slider__wrapper">
-            <div class="prices__slide slider__slide">
-              <div class="prices__slide-title-block">
-                <span class="prices__hit-label">хит</span>
-                <h3 class="prices__slide-title">
-                  Стандарт
-                </h3>
-                <span class="prices__cost">
+      <div class="slider slider--prices">
+        <input id="price-r1" class="slider__input" type="radio" name="prices-input" value="price-r1" checked>
+        <input id="price-r2" class="slider__input" type="radio" name="prices-input" value="price-r2" checked>
+        <input id="price-r3" class="slider__input" type="radio" name="prices-input" value="price-r3">
+        <div class="slider__switches slider__switches--prices">
+          <label for="price-r1" class="slider__switch slider__switch--prices"></label>
+          <label for="price-r2" class="slider__switch slider__switch--prices"></label>
+          <label for="price-r3" class="slider__switch slider__switch--prices"></label>
+        </div>
+        <div class="slider__wrapper slider__wrapper--prices">
+          <div class="slider__slide slider__slide--prices slider__slide--prices-r1">
+            <div class="prices__slide-title-block">
+              <h3 class="prices__slide-title">
+                Slide1
+              </h3>
+              <span class="prices__cost">
+                0,00 USD
+              </span>
+            </div>
+            <div class="prices__item">
+              <p class="prices__item-name">
+                #######
+              </p>
+              <div class="prices__item-availability prices__item-availability--yes"></div>
+            </div>
+            <div class="prices__item">
+              <p class="prices__item-name">
+                #######
+              </p>
+              <div class="prices__item-availability prices__item-availability--no"></div>
+            </div>
+            <div class="prices__item">
+              <p class="prices__item-name">
+                #######
+              </p>
+              <div class="prices__item-availability prices__item-availability--no"></div>
+            </div>
+          </div>
+          <div class="slider__slide slider__slide--prices slider__slide--prices-r2">
+            <div class="prices__slide-title-block">
+              <span class="prices__hit-label">хит</span>
+              <h3 class="prices__slide-title">
+                Стандарт
+              </h3>
+              <span class="prices__cost">
                 3,99 USD
               </span>
-              </div>
-              <div class="prices__item">
-                <p class="prices__item-name">
-                  Розовый фильтр
-                </p>
-                <div class="prices__item-availability prices__item-availability--yes"></div>
-              </div>
-              <div class="prices__item">
-                <p class="prices__item-name">
-                  Смайлики
-                </p>
-                <div class="prices__item-availability prices__item-availability--yes"></div>
-              </div>
-              <div class="prices__item">
-                <p class="prices__item-name">
-                  Комментарии
-                </p>
-                <div class="prices__item-availability prices__item-availability--no"></div>
-              </div>
             </div>
-            <div class="prices__slide slider__slide">
-              <div class="prices__slide-title-block">
-                <h3 class="prices__slide-title">
-                  Slide2
-                </h3>
-                <span class="prices__cost">
-                0,00 USD
-              </span>
-              </div>
-              <div class="prices__item">
-                <p class="prices__item-name">
-                  #######
-                </p>
-                <div class="prices__item-availability prices__item-availability--yes"></div>
-              </div>
-              <div class="prices__item">
-                <p class="prices__item-name">
-                  #######
-                </p>
-                <div class="prices__item-availability prices__item-availability--yes"></div>
-              </div>
-              <div class="prices__item">
-                <p class="prices__item-name">
-                  #######
-                </p>
-                <div class="prices__item-availability prices__item-availability--no"></div>
-              </div>
+            <div class="prices__item">
+              <p class="prices__item-name">
+                Розовый фильтр
+              </p>
+              <div class="prices__item-availability prices__item-availability--yes"></div>
             </div>
-            <div class="prices__slide slider__slide">
-              <div class="prices__slide-title-block">
-                <h3 class="prices__slide-title">
-                  Slide3
-                </h3>
-                <span class="prices__cost">
-                0,00 USD
-              </span>
-              </div>
-              <div class="prices__item">
-                <p class="prices__item-name">
-                  $$$$$$$
-                </p>
-                <div class="prices__item-availability prices__item-availability--yes"></div>
-              </div>
-              <div class="prices__item">
-                <p class="prices__item-name">
-                  $$$$$$$
-                </p>
-                <div class="prices__item-availability prices__item-availability--yes"></div>
-              </div>
-              <div class="prices__item">
-                <p class="prices__item-name">
-                  $$$$$$$
-                </p>
-                <div class="prices__item-availability prices__item-availability--no"></div>
-              </div>
+            <div class="prices__item">
+              <p class="prices__item-name">
+                Смайлики
+              </p>
+              <div class="prices__item-availability prices__item-availability--yes"></div>
             </div>
-
+            <div class="prices__item">
+              <p class="prices__item-name">
+                Комментарии
+              </p>
+              <div class="prices__item-availability prices__item-availability--no"></div>
+            </div>
           </div>
+          <div class="slider__slide slider__slide--prices slider__slide--prices-r3">
+            <div class="prices__slide-title-block">
+              <h3 class="prices__slide-title">
+                Slide3
+              </h3>
+              <span class="prices__cost">
+                0,00 USD
+              </span>
+            </div>
+            <div class="prices__item">
+              <p class="prices__item-name">
+                $$$$$$$
+              </p>
+              <div class="prices__item-availability prices__item-availability--yes"></div>
+            </div>
+            <div class="prices__item">
+              <p class="prices__item-name">
+                $$$$$$$
+              </p>
+              <div class="prices__item-availability prices__item-availability--yes"></div>
+            </div>
+            <div class="prices__item">
+              <p class="prices__item-name">
+                $$$$$$$
+              </p>
+              <div class="prices__item-availability prices__item-availability--no"></div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>

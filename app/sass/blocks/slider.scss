@@ -1,0 +1,98 @@
+.slider {
+  position: relative;
+}
+
+.slider__input {
+  display: none;
+}
+
+.slider__wrapper {
+  &--reviews {
+    height: 279px;
+    padding: {
+      top: 42px;
+      bottom: 0px;
+      left: 6.25%;
+      right: 6.25%;
+    }
+    text-align: center;
+  }
+  &--prices {
+    height: 470px;
+    padding: {
+      top: 85px;
+    }
+  }
+  outline: 1px solid red;
+}
+
+.slider__slide {
+  &--reviews {
+    display: none;
+  }
+  &--prices {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+.slider__switches {
+  &--reviews {
+    position: absolute;
+    bottom: 4%;
+    left: 42%;
+  }
+  &--prices {
+    position: absolute;
+    bottom: 4%;
+    left: 42%;
+  }
+  outline: 1px solid red;
+}
+
+.slider__switch {
+  position: relative;
+  cursor: pointer;
+}
+
+.slider__switch {
+  margin-right: 26px;
+  &:last-of-type {
+    margin-right: 0;
+  }
+  &::before {
+    @include pseudo;
+    top: 50%;
+    left: 50%;
+    width: 6px;
+    height: 6px;
+    background-color: #bec2c7;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.slider__input[id="review-r1"]:checked~.slider__switches--reviews>.slider__switch--reviews[for="review-r1"]::after,
+.slider__input[id="review-r2"]:checked~.slider__switches--reviews>.slider__switch--reviews[for="review-r2"]::after,
+.slider__input[id="review-r3"]:checked~.slider__switches--reviews>.slider__switch--reviews[for="review-r3"]::after,
+.slider__input[id="price-r1"]:checked~.slider__switches--prices>.slider__switch--prices[for="price-r1"]::after,
+.slider__input[id="price-r2"]:checked~.slider__switches--prices>.slider__switch--prices[for="price-r2"]::after,
+.slider__input[id="price-r3"]:checked~.slider__switches--prices>.slider__switch--prices[for="price-r3"]::after {
+  @include pseudo;
+  top: 50%;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  border: 3px solid $pink-indigo;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slider__input[id="review-r1"]:checked~.slider__wrapper>.slider__slide--reviews-r1,
+.slider__input[id="review-r2"]:checked~.slider__wrapper>.slider__slide--reviews-r2,
+.slider__input[id="review-r3"]:checked~.slider__wrapper>.slider__slide--reviews-r3 {
+  display: block;
+}
