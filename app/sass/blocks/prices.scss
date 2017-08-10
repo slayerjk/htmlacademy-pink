@@ -1,17 +1,22 @@
 .prices__wrapper {
+  height: 380px;
+  padding: {
+      top: 120px;
+    }
   background-color: $pink-grey;
+  overflow: hidden;
 }
 
 .prices__slide-title-block,
 .prices__item {
-  width: 87.5%;
+  width: 276px;
 }
 
 .prices__slide-title-block {
   position: relative;
   padding: {
     top: 18px;
-    bottom: 18px;
+    bottom: 21px;
   }
   text-align: center;
   background-color: #283645;
@@ -44,20 +49,22 @@
   justify-content: space-between;
   align-items: center;
   padding: {
-    top: 18px;
-    bottom: 18px;
+    top: 16px;
+    bottom: 13px;
   }
   background-color: #fff;
   border-bottom: 2px solid $pink-grey;
 }
 
 .prices__item-name {
+  padding-left: 23px;
   font: 1.4em/2.1428571429em $font-open-sans;//14/30
   color: #283645;
   text-transform: uppercase;
 }
 
 .prices__item-availability {
+  padding-right: 35px;
   &--yes {
     width: 31px;
     height: 21px;

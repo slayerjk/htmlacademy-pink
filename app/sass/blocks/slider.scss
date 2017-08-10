@@ -18,12 +18,11 @@
     text-align: center;
   }
   &--prices {
-    height: 470px;
-    padding: {
-      top: 85px;
-    }
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition: transform 0.3s linear;
   }
-  outline: 1px solid red;
 }
 
 .slider__slide {
@@ -34,11 +33,13 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: stretch;
+    border-right: 2px solid $pink-grey;
   }
 }
 
 .slider__switches {
+  z-index: 1;
   &--reviews {
     position: absolute;
     bottom: 4%;
@@ -46,7 +47,7 @@
   }
   &--prices {
     position: absolute;
-    bottom: 4%;
+    bottom: -18.5%;
     left: 42%;
   }
   outline: 1px solid red;
@@ -74,12 +75,12 @@
   }
 }
 
-.slider__input[id="review-r1"]:checked~.slider__switches--reviews>.slider__switch--reviews[for="review-r1"]::after,
-.slider__input[id="review-r2"]:checked~.slider__switches--reviews>.slider__switch--reviews[for="review-r2"]::after,
-.slider__input[id="review-r3"]:checked~.slider__switches--reviews>.slider__switch--reviews[for="review-r3"]::after,
-.slider__input[id="price-r1"]:checked~.slider__switches--prices>.slider__switch--prices[for="price-r1"]::after,
-.slider__input[id="price-r2"]:checked~.slider__switches--prices>.slider__switch--prices[for="price-r2"]::after,
-.slider__input[id="price-r3"]:checked~.slider__switches--prices>.slider__switch--prices[for="price-r3"]::after {
+.slider__input[id="review-r1"]:checked~.slider__switches>.slider__switch[for="review-r1"]::after,
+.slider__input[id="review-r2"]:checked~.slider__switches>.slider__switch[for="review-r2"]::after,
+.slider__input[id="review-r3"]:checked~.slider__switches>.slider__switch[for="review-r3"]::after,
+.slider__input[id="price-r1"]:checked~.slider__switches>.slider__switch[for="price-r1"]::after,
+.slider__input[id="price-r2"]:checked~.slider__switches>.slider__switch[for="price-r2"]::after,
+.slider__input[id="price-r3"]:checked~.slider__switches>.slider__switch[for="price-r3"]::after {
   @include pseudo;
   top: 50%;
   left: 50%;
@@ -95,4 +96,19 @@
 .slider__input[id="review-r2"]:checked~.slider__wrapper>.slider__slide--reviews-r2,
 .slider__input[id="review-r3"]:checked~.slider__wrapper>.slider__slide--reviews-r3 {
   display: block;
+}
+
+.slider__input[id="price-r1"]:checked~.slider__wrapper {
+  display: flex;
+  transform: translateX(20px);
+}
+
+.slider__input[id="price-r2"]:checked~.slider__wrapper {
+  display: flex;
+  transform: translateX(-256px);
+}
+
+.slider__input[id="price-r3"]:checked~.slider__wrapper {
+  display: flex;
+  transform: translateX(-534px);
 }

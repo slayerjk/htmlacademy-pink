@@ -1,0 +1,41 @@
+.contacts__wrapper {
+  position: relative;
+  padding: {
+    top: 43px;
+    bottom: 15px;
+  }
+  text-align: center;
+}
+
+.contacts__slogan {
+  margin-bottom: 36px;
+  font: 2.4em $font-open-sans-light;//24
+  line-height: 1.2em;
+  color: $pink-indigo;
+}
+
+.contacts__section {
+  margin-bottom: 20px;
+}
+
+.contacts__section-title {
+  font: 1.8em $font-open-sans-bold;//18
+  color: $pink-indigo;
+}
+
+.contacts__section-info {
+  font: 2.4em $font-open-sans-light;//24
+  color: #d22856;
+}
+
+.contacts__decor {
+  position: absolute;
+  bottom: -46px;
+  left: 0;
+  width: 100%;
+  height: 62px;
+  background: url("../../img/bg-triangle-white-footer.svg") no-repeat center;
+  background-size: contain;
+  z-index: 1;
+  outline: 1px solid red;
+}
