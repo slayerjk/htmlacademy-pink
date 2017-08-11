@@ -5,12 +5,12 @@
 .reviews__review-author {
   margin-bottom: 11px;
   font: 1.8em/1.6666666667em $font-open-sans-bold;//18/30
-  color: $pink-indigo;
+  color: $color-indigo;
 }
 
 .reviews__testimonial {
   font: 1.4em/2.1428571429em $font-open-sans;//14/30
-  color: $pink-indigo;
+  color: $color-indigo;
 }
 
 .reviews__decor {
@@ -22,5 +22,4 @@
   background: url('../../img/bg-triangle-white.svg') no-repeat center;
   background-size: cover;
   z-index: 1;
-  outline: 1px solid blue;
 }

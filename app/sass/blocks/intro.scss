@@ -11,7 +11,6 @@
   &--not-index {
     height: 170px;
     background: url("../../img/bg-back-mobile@1x.jpg") no-repeat center;
-    outline: 1px solid red;
   }
 }
 
@@ -40,8 +39,17 @@
   font: 1.8em/1em $font-open-sans-bold;//18/18
   text-align: center;
   color: #fff;
+  background-color: transparent;
   border: 3px solid #fff;
   border-radius: 30px;
+  &:hover {
+    color: $color-pink;
+    background-color: #fff;
+  }
+  &:active {
+    color: #f3d2d8;
+
+  }
 }
 
 .intro__os-icons {
@@ -54,7 +62,6 @@
     left: 13.5%;//35px;
     right: 13.5%;//35px;
   }
-  outline: 1px solid red;
 }
 
 .intro__desc {
@@ -64,7 +71,6 @@
   font: 1.4em/1.7142857143em $font-open-sans-light;//14/24
   text-align: center;
   color: #fff;
-  outline: 1px solid red;
 }
 
 //Retina 2x 320px

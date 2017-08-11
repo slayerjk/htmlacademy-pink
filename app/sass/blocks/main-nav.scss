@@ -26,24 +26,34 @@
     right: 6.25%;
     bottom: 24.5px;
   }
-  background-color: $pink-indigo;
+  background-color: $color-indigo;
   border-bottom: 1px solid #000;
 }
 
-.main-nav__link {
-  display: block;
+.main-nav__item {
   width: 100%;
   padding: {
     top: 15px;
     bottom: 15.5px;
   }
+  background-color: $color-indigo;
+  border: {
+    top: 1px solid #485461;
+    bottom: 1px solid #000;
+  }
+}
+
+.main-nav__link {
+  display: block;
   font: 1.8em/1.7777777778em $font-open-sans-bold;//18/32
   text-align: center;
   text-transform: uppercase;
   color: #fff;
-  background-color: $pink-indigo;
-  border: {
-    top: 1px solid #485461;
-    bottom: 1px solid #000;
+  &:hover,
+  &:active {
+    color: $color-pink;
+  }
+  &:active {
+    opacity: 0.3;
   }
 }

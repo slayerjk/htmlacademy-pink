@@ -9,9 +9,9 @@
 
 .contacts__slogan {
   margin-bottom: 36px;
-  font: 2.4em $font-open-sans-light;//24
+  font: 2.4em $font-open-sans-light; //24
   line-height: 1.2em;
-  color: $pink-indigo;
+  color: $color-indigo;
 }
 
 .contacts__section {
@@ -19,13 +19,22 @@
 }
 
 .contacts__section-title {
-  font: 1.8em $font-open-sans-bold;//18
-  color: $pink-indigo;
+  font: 1.8em $font-open-sans-bold; //18
+  color: $color-indigo;
 }
 
 .contacts__section-info {
-  font: 2.4em $font-open-sans-light;//24
-  color: #d22856;
+  font: 2.4em $font-open-sans-light; //24
+  color: $color-pink;
+  &--mailto:hover,
+  &--mailto:active {
+    color: $color-indigo;
+    text-decoration: underline;
+  }
+  &--mailto:active {
+    text-decoration: none;
+    opacity: 0.3;
+  }
 }
 
 .contacts__decor {
@@ -37,5 +46,4 @@
   background: url("../../img/bg-triangle-white-footer.svg") no-repeat center;
   background-size: contain;
   z-index: 1;
-  outline: 1px solid red;
 }

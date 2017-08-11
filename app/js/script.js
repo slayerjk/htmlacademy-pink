@@ -4,39 +4,36 @@
 $(document).ready(function () {
   'use strict';
 
-/*event.preventDefault() gor IE9(event.returnValue = false)*/
-  $.fn.eventPreventDefaultSafe = function () {
-    if (event.preventDefault) {
-      event.preventDefault();
+/*Sliders behaviour*/
+  /*
+  $.fn.slider1Switcher = function () {
+    var
+      $currentInput = $('.slider__input--js1:checked'),
+      $nextInput = $currentInput.next(),
+      $firstInput = $('.slider__input--js1').first();
+    $currentInput.removeAttr('checked');
+    if ($nextInput.prop('type') === 'radio') {
+      $nextInput.prop('checked', 'checked');
     } else {
-      event.returnValue = false;
+      $nextInput = $firstInput.prop('checked', 'checked');
     }
   };
-/*-------------------------------------------------------*/
   
-  if ($(window).width() < 768) {
-    $('.main-nav__list').hide();
-    $('.main-nav__menu-toggle').show();
-  }
+  $.fn.slider2Switcher = function () {
+    var
+      $currentInput = $('.slider__input--js2:checked'),
+      $nextInput = $currentInput.next(),
+      $firstInput = $('.slider__input--js2').first();
+    $currentInput.removeAttr('checked');
+    if ($nextInput.prop('type') === 'radio') {
+      $nextInput.prop('checked', 'checked');
+    } else {
+      $nextInput = $firstInput.prop('checked', 'checked');
+    }
+  };
   
-    
-  $('.main-nav__menu-toggle').on('click', function () {
-    $('.main-nav__list').slideToggle('slow');
-    $('.main-nav__menu-toggle').toggleClass('main-nav__menu-toggle--active');
-  });
+  setInterval($.fn.slider1Switcher, 3000);
   
+  setInterval($.fn.slider2Switcher, 4000);
+  */
 });
-
-/*_____etc hints_____*/
-/*jQuery Datepicker(datepicker-ru.js - is needed from jQueryUI i18n dir)*/
-/*
-  $.datepicker.setDefaults($.datepicker.regional[""]);
-  $.datepicker.setDefaults($.datepicker.regional["ru"]);
-
-  $(function () {
-    $('.input_dater').datepicker({
-      dateFormat: 'dd MM yy',
-      minDate: new Date()
-    });
-  });
-*/

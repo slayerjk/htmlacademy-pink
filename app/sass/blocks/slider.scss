@@ -34,7 +34,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
-    border-right: 2px solid $pink-grey;
+    border-right: 2px solid $color-grey;
   }
 }
 
@@ -50,7 +50,6 @@
     bottom: -18.5%;
     left: 42%;
   }
-  outline: 1px solid red;
 }
 
 .slider__switch {
@@ -87,7 +86,7 @@
   width: 6px;
   height: 6px;
   background: #fff;
-  border: 3px solid $pink-indigo;
+  border: 3px solid $color-indigo;
   border-radius: 50%;
   transform: translate(-50%, -50%);
 }

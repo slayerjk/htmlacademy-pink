@@ -8,33 +8,22 @@
   width: 320px;
   height: 625px;
   background: url("../../img/bg-map-mobile.png") no-repeat center -445px;
-}
-
-.map__pointer {
-  @include center;
-  width: 35px;
-  height: 35px;
-  outline: 1px solid red;
   &::before,
   &::after {
     @include pseudo;
+    top: 111px;
+    left: 50%; 
     border-radius: 50%;
     transform: translate(-50%, -50%);
   }
   &::before {
-    top: 50%;
-    left: 50%;
     width: 35px;
     height: 35px;
     background-color: #fff;
-    outline: 1px solid green;
   }
   &::after {
-    top: 50%;
-    left: 50%;
     width: 15px;
     height: 15px;
     background-color: #d22856;
-    outline: 1px solid red;
   }
 }

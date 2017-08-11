@@ -11,7 +11,7 @@
 .app-info__slogan {
   font: 2.4em $font-open-sans-light;//24px
   line-height: 1.25em;
-  color: $pink-indigo;
+  color: $color-indigo;
   &--question {
     margin-bottom: 27px;
   }
@@ -26,5 +26,4 @@
   background: url('../../img/bg-triangle-white.svg') no-repeat center;
   background-size: cover;
   z-index: 1;
-  outline: 1px solid red;
 }
