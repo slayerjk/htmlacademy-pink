@@ -27,7 +27,6 @@
 .media__item-img-link {
   position: relative;
   width: 100%;
-  outline: 1px solid red;
 }
 
 .media__item-img {
@@ -145,15 +144,23 @@
   padding: {
     left: 12%;
   }
-  outline: 1px solid red;
 }
 
 .editor-icon {
   cursor: pointer;
   opacity: 0.3;
+  &:hover {
+    opacity: 0.5;
+  }
   &--active {
     opacity: 1;
     fill: $color-pink;
+    &:hover {
+      opacity: 1;
+    }
+    &:active {
+      opacity: 1;
+    }
   }
   &--crop {
     margin-right: 13%;
@@ -185,6 +192,9 @@
     cursor: pointer;
     transform: translateY(-50%);
   }
+  &:active::after {
+    background-color: $color-pink;
+  }
 }
 
 .media__buttons-block {
@@ -213,19 +223,29 @@
   background-color: transparent;
   border: 3px solid $color-pink;
   border-radius: 30px;
+  outline: none;
   &:last-of-type {
     margin-bottom: 0;
   }
   &:hover {
-    color: $color-pink;
-    background-color: #fff;
+    color: #fff;
+    background-color: $color-pink;
   }
   &:active {
-    color: #f3d2d8;
+    color: rgba(255, 255, 255, 0.3);
   }
   &--na {
-    color: #000;
-    border-color: #000;
-    opacity: 0.1;
+    color: #dddfe0;
+    border-color: #dddfe0;
+    &:hover {
+      color: #b5b9be;
+      border-color: #b5b9be;
+      background-color: $color-grey;
+    }
+    &:active {
+      color: $color-grey;
+      border-color: #b5b9be;
+      background-color: #b5b9be;
+    }
   }
 }

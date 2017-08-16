@@ -1,0 +1,28 @@
+.socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 55.6%;//178
+  margin-bottom: 39px;
+}
+
+.socials__social-btn {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  text-indent: -99999px;
+  border: 2px solid $color-grey;
+  border-radius: 50%;
+  &:hover {
+    border-color: $color-indigo;
+  }
+  &:active {
+    border-color: $color-grey;
+    opacity: 0.3;
+  }
+}
+
+.social__icon {
+  @include center;
+  fill: $color-pink;
+}
