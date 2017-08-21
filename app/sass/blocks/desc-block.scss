@@ -1,0 +1,30 @@
+.desc-block {
+  padding: {
+    top: 45px;
+    bottom: 49px;
+    left: 11%;
+    right: 11%;
+  }
+  text-align: center;
+  background-color: #fff;
+  &--video {
+    padding: {
+      top: 45px;
+      bottom: 40px;
+      left: 1.5%;
+      right: 1.5%;
+    }
+  }
+  &--contest {
+    padding: {
+      bottom: 34px;
+      left: 6.25%;
+      right: 6.25%;
+    } 
+  }
+}
+
+.desc-block__desc {
+  font: 1.4em/2.1428571429em $font-open-sans; //14/30
+  color: $color-indigo;
+}

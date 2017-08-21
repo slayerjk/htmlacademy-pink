@@ -1,0 +1,82 @@
+.contest__wrapper {
+  outline: 1px solid red;
+}
+
+.contest__form {
+  text-align: center;
+  background-color: #fff;
+}
+
+.contest__form-section {
+  padding: {
+    top: 38px;
+    bottom: 25px;
+    left: 6.25%;
+    right: 6.25%;
+  }
+  outline: 1px solid red;
+  &--user {
+    padding: {
+      top: 0;
+    }
+  }
+  &--grey {
+    background-color: $color-grey;
+  }
+}
+
+.contest__form-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 17px;
+  &:last-of-type {
+    margin-bottom: none;
+  }
+}
+
+.contest__input {
+  width: 100%;
+  padding: {
+    top: 14px;
+    bottom: 15px;
+    left: 7.5%;
+    right: 7.5%;
+  }
+  border:2px solid #e5e5e5;
+  box-sizing: border-box;
+  &--select {
+    display: none;
+  }
+}
+
+.contest__label {
+  font: 1.8em/1.6666666667em $font-open-sans;//18/30
+  color: $color-indigo;
+  &--title {
+    margin-bottom: 5px;
+    padding-left: 8%;
+    font: 1.4em/2.1428571429em $font-open-sans;//14/30
+    text-transform: uppercase;
+    color: $color-pink;
+  }
+}
+
+.contest__input {
+  @include placeholder {
+    color: $color-indigo;
+  }
+  font: 1.8em/1.6666666667em $font-open-sans;//18/30
+  color: $color-indigo;
+}
+
+.contest__form-section-title {
+  margin-bottom: 45px;
+  padding: {
+    left: 6.25%;
+    right: 6.25%;
+  }
+  font: 1.4em/1.2857142857em $font-open-sans;//14/18
+  text-transform: uppercase;
+  color: $color-pink;
+}

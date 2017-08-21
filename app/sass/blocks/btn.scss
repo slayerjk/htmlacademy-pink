@@ -1,8 +1,15 @@
 .btn {
-  color: rgba(255, 255, 255, 0.9);
+  padding: {
+    top: 20px;
+    bottom: 20px;
+  }
   text-align: center;
-  text-transform: none;
-  background-color: grey;
+  font: 1.8em/1.6666666667em $font-open-sans-bold;//18/30
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #2aab6d;
+  border: none;
+  outline: none;
   cursor: pointer;
   &:hover {
     color: rgba(255, 255, 255, 1);
