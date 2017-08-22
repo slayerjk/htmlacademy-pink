@@ -79,4 +79,106 @@
   font: 1.4em/1.2857142857em $font-open-sans;//14/18
   text-transform: uppercase;
   color: $color-pink;
+  &--os {
+    margin-bottom: 40px;
+  }
+}
+
+.contest__label--select {
+  position: relative;
+  width: 75%;
+  padding: {
+    left: 25%;
+  }
+  text-align: left;
+  cursor: pointer;
+  outline: 1px solid red;
+  &::before,
+  &::after {
+    @include pseudo;
+  }
+  &::before {
+    top: 50%;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    border: 2px solid #e5e5e5;
+    background-color: #fff;
+    transform: translateY(-50%);
+  }
+}
+
+.contest__label--checkbox {
+  margin-bottom: 35px;
+  &::before {
+    border-radius: 3px;
+  }
+}
+
+.contest__input[id="selfie"]:checked + .contest__label--select[for="selfie"]::after,
+.contest__input[id="sunburn"]:checked + .contest__label--select[for="sunburn"]::after,
+.contest__input[id="chuck"]:checked + .contest__label--select[for="chuck"]::after, 
+.contest__input[id="gifts"]:checked + .contest__label--select[for="gifts"]::after,
+.contest__input[id="tower"]:checked + .contest__label--select[for="tower"]::after,
+.contest__input[id="demolish"]:checked + .contest__label--select[for="demolish"]::after {
+  top: 13%;
+  left: 3.9%;
+  width: 21px;
+  height: 20px;
+  background: url("../../img/icons/icon-tick.svg") no-repeat center;
+}
+
+.contest__label--radio {
+  margin-bottom: 28px;
+  &::before {
+    border-radius: 50%;
+  }
+}
+
+.contest__input[id="pink-ios"]:checked + .contest__label--select[for="pink-ios"]::after,
+.contest__input[id="pink-android"]:checked + .contest__label--select[for="pink-android"]::after,
+.contest__input[id="pink-windows"]:checked + .contest__label--select[for="pink-windows"]::after {
+  top: 50%;
+  left: 4%;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: $color-pink;
+  transform: translateY(-50%);
+}
+
+.contest__form-block:last-of-type .contest__label--select {
+  margin-bottom: 0;
+}
+
+.contest__form-section--os {
+  padding-bottom: 29px;
+}
+
+.contest__form-section-title--emotions {
+  margin-bottom: 18px;
+}
+
+.contest__input--describe-emotions {
+  min-height: 201px;
+}
+
+.contest__form-section--submit {
+  padding : 0;
+  padding-top: 6px;
+  text-align: center;
+}
+
+.contest__form-submit {
+  width: 87.5%;
+  margin-bottom: 35px;
+}
+
+.contest__form-required-text {
+  font: 1.4em/2.1428571429em $font-open-sans;//14/30
+  text-transform: uppercase;
+  color: $color-indigo;
+  &--pink {
+    color: $color-pink
+  }
 }
