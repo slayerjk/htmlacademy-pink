@@ -1,7 +1,3 @@
-.contest__wrapper {
-  outline: 1px solid red;
-}
-
 .contest__form {
   text-align: center;
   background-color: #fff;
@@ -14,7 +10,6 @@
     left: 6.25%;
     right: 6.25%;
   }
-  outline: 1px solid red;
   &--user {
     padding: {
       top: 0;
@@ -36,6 +31,9 @@
 }
 
 .contest__input {
+  @include placeholder {
+    color: $color-indigo;
+  }
   width: 100%;
   padding: {
     top: 14px;
@@ -43,10 +41,20 @@
     left: 7.5%;
     right: 7.5%;
   }
+  font: 1.8em/1.6666666667em $font-open-sans;//18/30
+  color: $color-indigo;
   border:2px solid #e5e5e5;
   box-sizing: border-box;
   &--select {
     display: none;
+  }
+  &--error-js {
+    font-size: 1.3em;
+    @include placeholder {
+    color: $color-pink;
+    font-style: italic;
+    }
+    border-color: $color-pink;
   }
 }
 
@@ -60,14 +68,6 @@
     text-transform: uppercase;
     color: $color-pink;
   }
-}
-
-.contest__input {
-  @include placeholder {
-    color: $color-indigo;
-  }
-  font: 1.8em/1.6666666667em $font-open-sans;//18/30
-  color: $color-indigo;
 }
 
 .contest__form-section-title {
@@ -92,7 +92,6 @@
   }
   text-align: left;
   cursor: pointer;
-  outline: 1px solid red;
   &::before,
   &::after {
     @include pseudo;
