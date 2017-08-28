@@ -10,7 +10,7 @@
   position: relative;
   width: 45px;
   height: 45px;
-  text-indent: -99999px;
+  font-size: 0;
   border: 2px solid $color-grey;
   border-radius: 50%;
   &:hover {
