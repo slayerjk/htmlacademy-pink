@@ -6,18 +6,19 @@
   text-align: center;
   font: 1.8em/1.6666666667em $font-open-sans-bold;//18/30
   text-transform: uppercase;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.9);
   background-color: #2aab6d;
   border: none;
+  border-radius: 3px;
   outline: none;
   cursor: pointer;
   &:hover {
-    color: rgba(255, 255, 255, 1);
-    background-color: #669ec0;
+    color: #fff;
+    background-color: #1c9b5e;
   }
   &:active {
     color: rgba(255, 255, 255, 0.3);
-    background-color: #5496bd;
+    background-color: #1c9b5e;
   }
   &:disabled,
   &--disabled {

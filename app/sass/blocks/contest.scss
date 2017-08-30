@@ -44,7 +44,15 @@
   font: 1.8em/1.6666666667em $font-open-sans;//18/30
   color: $color-indigo;
   border:2px solid #e5e5e5;
+  border-radius: 3px;
+  outline: none;
   box-sizing: border-box;
+  &:hover {
+    border-color: $color-indigo;  
+  }
+  &:focus {
+    border-color: $color-pink;  
+  }
   &--select {
     display: none;
   }
@@ -104,6 +112,12 @@
     border: 2px solid #e5e5e5;
     background-color: #fff;
     transform: translateY(-50%);
+  }
+  &:hover::before {
+    border-color: $color-indigo;
+  }
+  &:active::before {
+    border-color: $color-pink;
   }
 }
 

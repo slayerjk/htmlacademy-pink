@@ -68,9 +68,15 @@
     left: 50%;
     width: 6px;
     height: 6px;
-    background-color: #bec2c7;
+    background-color: rgba(126, 134, 143, 0.7);
     border-radius: 50%;
     transform: translate(-50%, -50%);
+  }
+  &:hover::before {
+    background-color: #7e868f;
+  }
+  &:active::before {
+    background-color: rgba(126, 134, 143, 0.3);
   }
 }
 
