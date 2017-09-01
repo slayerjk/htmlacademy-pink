@@ -1,12 +1,9 @@
-.slider {
-  position: relative;
-}
-
 .slider__input {
   display: none;
 }
 
 .slider__wrapper {
+  position: relative;
   &--reviews {
     height: 279px;
     padding: {
@@ -25,6 +22,15 @@
   }
 }
 
+.slider {
+  position: relative;
+  &--prices {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 .slider__slide {
   &--reviews {
     display: none;
@@ -39,16 +45,16 @@
 }
 
 .slider__switches {
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 1;
   &--reviews {
     position: absolute;
     bottom: 4%;
-    left: 42%;
   }
   &--prices {
     position: absolute;
     bottom: -18.5%;
-    left: 42%;
   }
 }
 
