@@ -31,6 +31,7 @@
         <div class="main-nav__logo">
           <a class="main-nav__logo-link">
             <picture>
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
               <img class="main-nav__logo-img" src="img/logo-pink-white-mobile.svg" width="73" height="23" alt="pink-logo">
             </picture>
           </a>
@@ -65,7 +66,8 @@
   <section class="intro intro--index">
     <div class="intro__wrapper wrapper-global">
       <div class="intro__block-bg"></div>
-      <div class="intro__desc-block">
+      <div class="intro__desc-block intro__desc-block--index">
+        <h1 class="intro__title intro__title--index">Взгляните на жизнь иначе!</h1>
         <a href="#" class="intro__download-link">
           Скачать приложение
         </a>
@@ -92,6 +94,7 @@
         </p>
         <div class="app-info__decor"></div>
       </div>
+      
       <div class="features">
         <div class="features__item">
           <h2 class="features__item-title">
@@ -118,7 +121,8 @@
           </p>
         </div>
         <picture>
-          <img class="features__desc-img" src="img/iphone-screen-mobile@1x.png" width="157" height="320" srcset="img/iphone-screen-mobile@2x.png 2x" alt="iphone-img">
+          <source media="(min-width: 660px)" srcset="img/iphone-screen-smile-tablet@1x.png 1x, img/iphone-screen-smile-tablet@2x.png 2x">
+          <img class="features__desc-img" src="img/iphone-screen-smile-mobile@1x.png" width="157" height="320" srcset="img/iphone-screen-smile-mobile@2x.png 2x" alt="iphone-img">
         </picture>
       </div>
     </div>
@@ -320,7 +324,7 @@
   <script src="js/picturefill.min.js"></script>
 
   <!--<script src="js/script.min.js"></script>-->
-  <script src="js/script.js"></script>
+  <!--<script src="js/script.js"></script>-->
 
 </body>
 

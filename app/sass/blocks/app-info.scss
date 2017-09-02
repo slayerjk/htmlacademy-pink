@@ -27,3 +27,27 @@
   background-size: cover;
   z-index: 1;
 }
+
+//Tablet(660px)
+@media #{$tablet} {
+  .app-info__slogan-block {
+    padding: {
+      top: 49px;
+      bottom: 30px;
+    }
+  }
+  
+  .app-info__slogan {
+    font-size: 4em;//40px
+    line-height: 1.2em;
+    &--question {
+      margin-bottom: 0px;
+    }
+    &--answer {
+      padding: {
+        left: 7%;
+        right: 7%;
+      }
+    }
+  }
+}
