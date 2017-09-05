@@ -1,4 +1,4 @@
-.features {
+.features__wrapper {
   position: relative;
   padding: {
     top: 112px;
@@ -31,6 +31,10 @@
   color: $color-indigo;
 }
 
+.features__text-tranfer {
+  display: none;
+}
+
 .features__desc-img {
   position: absolute;
   bottom: -5%;
@@ -39,5 +43,32 @@
 
 //Tablet(660px)
 @media #{$tablet} {
+  .features__wrapper {
+    padding: {
+      top: 93px;
+      bottom: 42px;
+    }
+    text-align: left;
+  }
   
+  .features__item {
+    padding: 0;
+    padding: {
+      left: 50%;
+      right: 2%;
+    }
+    margin-bottom: 35px;
+  }
+  
+  .features__text-tranfer {
+    display: inline;
+  }
+  
+  .features__desc-img {
+    top: 20px;
+    left: 3%;
+    width: 268px;
+    height: 481px;
+    z-index: 2;
+  }
 }

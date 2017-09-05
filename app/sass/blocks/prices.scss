@@ -7,6 +7,10 @@
   overflow: hidden;
 }
 
+.prices__options-block {
+  display: none;
+}
+
 .prices__slide-title-block,
 .prices__item {
   width: 276px;
@@ -83,5 +87,34 @@
     width: 27px;
     height: 26px;
     background: url("../../img/icons/prices__icon-no.png") no-repeat center;
+  }
+}
+
+//Tablet(660px)
+@media #{$tablet} {
+  .prices__wrapper {
+    height: 380px;
+    padding: {
+      top: 120px;
+    }
+    background-color: $color-grey;
+    overflow: hidden;
+  }
+  
+  .prices__options-block {
+    display: block;
+  }
+  
+  .prices__slide-title-block {
+    &--empty {
+      background-color: transparent; 
+      border: none;
+    }
+  }
+  
+  .prices__slide-title-block,
+  .prices__item {
+    width: 150px;
+    outline: 1px solid red;
   }
 }

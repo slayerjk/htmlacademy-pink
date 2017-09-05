@@ -34,6 +34,8 @@
 .slider__slide {
   &--reviews {
     display: none;
+    flex-direction: column;
+    align-items: center;
   }
   &--prices {
     display: flex;
@@ -106,7 +108,7 @@
 .slider__input[id="review-r1"]:checked~.slider__wrapper>.slider__slide--reviews-r1,
 .slider__input[id="review-r2"]:checked~.slider__wrapper>.slider__slide--reviews-r2,
 .slider__input[id="review-r3"]:checked~.slider__wrapper>.slider__slide--reviews-r3 {
-  display: block;
+  display: flex;
 }
 
 .slider__input[id="price-r1"]:checked~.slider__wrapper {
@@ -122,4 +124,46 @@
 .slider__input[id="price-r3"]:checked~.slider__wrapper {
   display: flex;
   transform: translateX(-534px);
+}
+
+//Tablet(660px)
+@media #{$tablet} {
+  .slider__wrapper {
+    &--reviews {
+      height: 238px;
+      padding: {
+        top: 42px;
+        left: 3%;
+        right: 3%;
+      }
+    }
+    &--prices {
+      display: flex;
+      justify-content: flex-start;
+      align-items: stretch;
+    }
+  }
+  
+  .slider__slide {
+    &--prices {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: stretch;
+      border-right: 2px solid $color-grey;
+    }
+  }
+  
+  .slider__switches {
+    &--reviews {
+      bottom: 2%;
+    }
+    &--prices {
+      display: none;
+    }
+  }
+  
+  .slider__input[id="price-r2"]:checked~.slider__wrapper {
+    transform: none;
+  }
 }

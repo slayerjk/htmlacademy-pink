@@ -2,10 +2,18 @@
   position: relative;
 }
 
+.reviews__sci-fact {
+  display: none;
+}
+
 .reviews__review-author {
   margin-bottom: 11px;
   font: 1.8em/1.6666666667em $font-open-sans-bold;//18/30
   color: $color-indigo;
+}
+
+.reviews__review-author-profession {
+  display: none;
 }
 
 .reviews__testimonial {
@@ -22,4 +30,77 @@
   background: url('../../img/bg-triangle-white.svg') no-repeat center;
   background-size: cover;
   z-index: 1;
+}
+
+//Tablet(660px)
+@media #{$tablet} {
+  .reviews__wrapper {
+    padding: {
+      top: 96px;
+    }
+  }
+  
+  .reviews__sci-fact {
+    display: block;
+    margin-bottom: 82px;
+    padding: {
+      left: 50%;
+      right: 5.11%; 
+    }
+    text-align: left;
+    outline: 1px solid red;
+  }
+  
+  .reviews__sci-fact-icon {
+    position: absolute;
+    top: 60px;
+    left: 3.4%;
+    width: 237px;
+    
+    outline: 1px solid red;
+  }
+  
+  .reviews__sci-fact-title {
+    margin-bottom: 10px;
+    font: 3em/1.2em $font-open-sans-bold;//30/36
+    color: #000;
+  }
+  
+  .reviews__sci-fact-desc {
+    margin-bottom: 10px;
+    font: 1.4em/1.7142857143em $font-open-sans;//14/24
+    color: $color-indigo;
+  }
+  
+  .reviews__sci-fact-to-article {
+    font: 1.4em/1.7142857143em $font-open-sans;//14/24
+    color: $color-pink;
+    text-decoration: underline;
+  }
+  
+  .reviews__testimonial,
+  .reviews__review-author {
+    margin: 0; 
+  }
+  
+  .reviews__testimonial {
+    order: 1;
+    margin-bottom: 35px;
+    font-size: 1.8em;//18
+    line-height: 1.6666666667em;//18
+  }
+  
+  .reviews__review-author {
+    order: 2;
+    margin-bottom: 4px;
+    font-size: 2em;//20
+    line-height: 1.5em;//30
+  }
+  
+  .reviews__review-author-profession {
+    display: inline;
+    order: 3;
+    font: 1.4em/2.1428571429em $font-open-sans;//14/30
+    color: $color-indigo;
+  }
 }

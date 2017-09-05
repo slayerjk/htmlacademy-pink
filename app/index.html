@@ -94,42 +94,54 @@
         </p>
         <div class="app-info__decor"></div>
       </div>
-      
-      <div class="features">
-        <div class="features__item">
-          <h2 class="features__item-title">
-            Поднимает настроение
-          </h2>
-          <p class="features__item-desc">
-            Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-          </p>
-        </div>
-        <div class="features__item">
-          <h2 class="features__item-title">
-            Меняет мир вокруг
-          </h2>
-          <p class="features__item-desc">
-            Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-          </p>
-        </div>
-        <div class="features__item">
-          <h2 class="features__item-title">
-            Заводит новых друзей
-          </h2>
-          <p class="features__item-desc">
-            Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
-          </p>
-        </div>
-        <picture>
-          <source media="(min-width: 660px)" srcset="img/iphone-screen-smile-tablet@1x.png 1x, img/iphone-screen-smile-tablet@2x.png 2x">
-          <img class="features__desc-img" src="img/iphone-screen-smile-mobile@1x.png" width="157" height="320" srcset="img/iphone-screen-smile-mobile@2x.png 2x" alt="iphone-img">
-        </picture>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="features__wrapper wrapper-global">
+      <div class="features__item">
+        <h2 class="features__item-title">
+          Поднимает настроение
+        </h2>
+        <p class="features__item-desc">
+          Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+        </p>
       </div>
+      <div class="features__item">
+        <h2 class="features__item-title">
+          Меняет мир вокруг
+        </h2>
+        <p class="features__item-desc">
+          Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы<br class="features__text-tranfer"> усилить эффект
+        </p>
+      </div>
+      <div class="features__item">
+        <h2 class="features__item-title">
+          Заводит новых друзей
+        </h2>
+        <p class="features__item-desc">
+          Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
+        </p>
+      </div>
+      <picture>
+        <source media="(min-width: 660px)" srcset="img/iphone-screen-smile-tablet@1x.png 1x, img/iphone-screen-smile-tablet@2x.png 2x">
+        <img class="features__desc-img" src="img/iphone-screen-smile-mobile@1x.png" width="157" height="320" srcset="img/iphone-screen-smile-mobile@2x.png 2x" alt="iphone-img">
+      </picture>
+    </div>
     </div>
   </section>
 
   <section class="reviews">
     <div class="reviews__wrapper wrapper-global">
+      <div class="reviews__sci-fact">
+        <img class="reviews__sci-fact-icon" src="img/icons/icon-clock.png" width="298" height="345" alt="clock-icon">
+        <h2 class="reviews__sci-fact-title">Эффект <br class="reviews__sci-fact-text-transfer">на 24 часа!</h2>
+        <p class="reviews__sci-fact-desc">
+          Британские ученые провели исследования и доказали, что положительный эффект
+          <br class="reviews__sci-fact-text-transfer">от использования приложения длится целые сутки!
+        </p>
+        <a href="#" class="reviews__sci-fact-to-article">Узнать больше об исследовании</a>
+      </div>
       <div class="slider slider--reviews">
         <input id="review-r1" class="slider__input slider__input--js1" type="radio" name="reviews-input" value="review-r1" checked>
         <input id="review-r2" class="slider__input slider__input--js1" type="radio" name="reviews-input" value="review-r2">
@@ -144,6 +156,7 @@
             <h3 class="reviews__review-author">
               Николай Петров
             </h3>
+            <p class="reviews__review-author-profession">25 лет, водитель трамвая</p>
             <blockquote class="reviews__testimonial">
               «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
             </blockquote>
@@ -152,16 +165,18 @@
             <h3 class="reviews__review-author">
               Author2
             </h3>
+            <p class="reviews__review-author-profession">?? лет, @#$%!$%^</p>
             <blockquote class="reviews__testimonial">
-              «Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque reiciendis sequi ullam, dolorum! Eveniet pariatur suscipit voluptatum obcaecati harum expedita autem voluptas sint, vero, nisi quisquam mollitia corrupti, dolorem necessitatibus.»
+              «Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque reiciendis sequi ullam, dolorum! Eveniet pariatur suscipit voluptatum obcaecati harum expedita autem voluptas sint, vero, nisi quisquam»
             </blockquote>
           </div>
           <div class="slider__slide slider__slide--reviews slider__slide--reviews-r3">
             <h3 class="reviews__review-author">
               Author3
             </h3>
+            <p class="reviews__review-author-profession">?? лет, @#$%!$%^</p>
             <blockquote class="reviews__testimonial">
-              «Lorem ipsum dolor sit amet, consectetur adipisicing elit. In neque doloremque ipsum dicta adipisci voluptatum dolores, quibusdam, atque vel optio architecto, consectetur. Inventore voluptates mollitia nemo, ipsam ad culpa vitae!»
+              «Lorem ipsum dolor sit amet, consectetur adipisicing elit. In neque doloremque ipsum dicta adipisci voluptatum dolores, quibusdam, atque vel optio architecto, consectetur. Inventore voluptates mollitia nemo!»
             </blockquote>
           </div>
         </div>
@@ -182,6 +197,28 @@
           <label for="price-r3" class="slider__switch"></label>
         </div>
         <div class="slider__wrapper slider__wrapper--prices">
+          <div class="prices__options-block slider__slide slider__slide--prices slider__slide--prices-r1">
+            <div class="prices__slide-title-block prices__slide-title-block--empty">
+              <h3 class="prices__slide-title"></h3>
+              <span class="prices__cost"></span>
+            </div>
+            <div class="prices__item">
+              <p class="prices__item-name">
+                Розовый фильтр
+              </p>
+            </div>
+            <div class="prices__item">
+              <p class="prices__item-name">
+                Смайлики
+              </p>
+            </div>
+            <div class="prices__item">
+              <p class="prices__item-name">
+                Комментарии
+              </p>
+            </div>
+          </div>
+
           <div class="slider__slide slider__slide--prices slider__slide--prices-r1">
             <div class="prices__slide-title-block">
               <h3 class="prices__slide-title">
@@ -193,19 +230,19 @@
             </div>
             <div class="prices__item">
               <p class="prices__item-name">
-                #######
+                Розовый фильтр
               </p>
               <div class="prices__item-availability prices__item-availability--yes"></div>
             </div>
             <div class="prices__item">
               <p class="prices__item-name">
-                #######
+                Смайлики
               </p>
               <div class="prices__item-availability prices__item-availability--no"></div>
             </div>
             <div class="prices__item">
               <p class="prices__item-name">
-                #######
+                Комментарии
               </p>
               <div class="prices__item-availability prices__item-availability--no"></div>
             </div>
@@ -250,19 +287,19 @@
             </div>
             <div class="prices__item">
               <p class="prices__item-name">
-                $$$$$$$
+                Розовый фильтр
               </p>
               <div class="prices__item-availability prices__item-availability--yes"></div>
             </div>
             <div class="prices__item">
               <p class="prices__item-name">
-                $$$$$$$
+                Смайлики
               </p>
               <div class="prices__item-availability prices__item-availability--yes"></div>
             </div>
             <div class="prices__item">
               <p class="prices__item-name">
-                $$$$$$$
+                Комментарии
               </p>
               <div class="prices__item-availability prices__item-availability--no"></div>
             </div>
