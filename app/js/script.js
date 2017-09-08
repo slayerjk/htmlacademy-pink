@@ -19,9 +19,9 @@ $(document).ready(function () {
   
   function navMenuState() {
     var $winsize = $(window).width();
-    if ($winsize <= 768) {
+    if ($winsize <= 660) {
       navMenuMobile();
-    } else if ($winsize > 768) {
+    } else if ($winsize > 660) {
       navMenuWide();
     }
   }
@@ -44,9 +44,9 @@ $(document).ready(function () {
   $(window).on('resize', function () {
     var $winsize = $(window).width();
     $('.main-nav__menu-toggle').removeClass('main-nav__menu-toggle--active');
-    if ($winsize <= 768) {
+    if ($winsize <= 660) {
       navMenuMobile();
-    } else if ($winsize > 768) {
+    } else if ($winsize > 660) {
       navMenuWide();
     }
   });
@@ -59,7 +59,7 @@ $(document).ready(function () {
     var
       $currentInput = $('.slider__input--js1:checked'),
       $nextInput = $currentInput.next(),
-      $firstInput = $('.slider__input--js1').first();
+      $firstInput = $('.reviews__slider-input--js1').first();
     $currentInput.removeAttr('checked');
     if ($nextInput.prop('type') === 'radio') {
       $nextInput.prop('checked', 'checked');
@@ -72,7 +72,7 @@ $(document).ready(function () {
     var
       $currentInput = $('.slider__input--js2:checked'),
       $nextInput = $currentInput.next(),
-      $firstInput = $('.slider__input--js2').first();
+      $firstInput = $('.reviews__slider-input--js2').first();
     $currentInput.removeAttr('checked');
     if ($nextInput.prop('type') === 'radio') {
       $nextInput.prop('checked', 'checked');

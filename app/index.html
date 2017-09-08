@@ -142,17 +142,17 @@
         </p>
         <a href="#" class="reviews__sci-fact-to-article">Узнать больше об исследовании</a>
       </div>
-      <div class="slider slider--reviews">
-        <input id="review-r1" class="slider__input slider__input--js1" type="radio" name="reviews-input" value="review-r1" checked>
-        <input id="review-r2" class="slider__input slider__input--js1" type="radio" name="reviews-input" value="review-r2">
-        <input id="review-r3" class="slider__input slider__input--js1" type="radio" name="reviews-input" value="review-r3">
-        <div class="slider__switches slider__switches--reviews">
-          <label for="review-r1" class="slider__switch"></label>
-          <label for="review-r2" class="slider__switch"></label>
-          <label for="review-r3" class="slider__switch"></label>
+      <div class="reviews__slider">
+        <input id="review-r1" class="reviews__slider-input reviews__slider-input--js1" type="radio" name="reviews-input" value="review-r1" checked>
+        <input id="review-r2" class="reviews__slider-input reviews__slider-input--js2" type="radio" name="reviews-input" value="review-r2">
+        <input id="review-r3" class="reviews__slider-input reviews__slider-input--js3" type="radio" name="reviews-input" value="review-r3">
+        <div class="slider-switches slider-switches--reviews">
+          <label for="review-r1" class="slider-switches__switch"></label>
+          <label for="review-r2" class="slider-switches__switch"></label>
+          <label for="review-r3" class="slider-switches__switch"></label>
         </div>
-        <div class="slider__wrapper slider__wrapper--reviews">
-          <div class="slider__slide slider__slide--reviews slider__slide--reviews-r1">
+        <div class="reviews__slider-wrapper">
+          <div class="reviews__slider-slide reviews__slider-slide--r1">
             <h3 class="reviews__review-author">
               Николай Петров
             </h3>
@@ -161,7 +161,7 @@
               «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
             </blockquote>
           </div>
-          <div class="slider__slide slider__slide--reviews slider__slide--reviews-r2">
+          <div class="reviews__slider-slide reviews__slider-slide--r2">
             <h3 class="reviews__review-author">
               Author2
             </h3>
@@ -170,7 +170,7 @@
               «Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque reiciendis sequi ullam, dolorum! Eveniet pariatur suscipit voluptatum obcaecati harum expedita autem voluptas sint, vero, nisi quisquam»
             </blockquote>
           </div>
-          <div class="slider__slide slider__slide--reviews slider__slide--reviews-r3">
+          <div class="reviews__slider-slide reviews__slider-slide--r3">
             <h3 class="reviews__review-author">
               Author3
             </h3>
@@ -187,17 +187,17 @@
 
   <section class="prices">
     <div class="prices__wrapper wrapper-global">
-      <div class="slider slider--prices">
-        <input id="price-r1" class="slider__input slider__input--js2" type="radio" name="prices-input" value="price-r1" checked>
-        <input id="price-r2" class="slider__input slider__input--js2" type="radio" name="prices-input" value="price-r2" checked>
-        <input id="price-r3" class="slider__input slider__input--js2" type="radio" name="prices-input" value="price-r3">
-        <div class="slider__switches slider__switches--prices">
-          <label for="price-r1" class="slider__switch"></label>
-          <label for="price-r2" class="slider__switch"></label>
-          <label for="price-r3" class="slider__switch"></label>
+      <div class="prices__slider">
+        <input id="price-r1" class="prices__slider-input" type="radio" name="prices-input" value="price-r1" checked>
+        <input id="price-r2" class="prices__slider-input" type="radio" name="prices-input" value="price-r2" checked>
+        <input id="price-r3" class="prices__slider-input" type="radio" name="prices-input" value="price-r3">
+        <div class="slider-switches slider-switches--prices">
+          <label for="price-r1" class="slider-switches__switch"></label>
+          <label for="price-r2" class="slider-switches__switch"></label>
+          <label for="price-r3" class="slider-switches__switch"></label>
         </div>
-        <div class="slider__wrapper slider__wrapper--prices">
-          <div class="prices__options-block slider__slide slider__slide--prices slider__slide--prices-r1">
+        <div class="prices__slider-wrapper">
+          <div class="prices__slider__slide">
             <div class="prices__slide-title-block prices__slide-title-block--empty">
               <h3 class="prices__slide-title"></h3>
               <span class="prices__cost"></span>
@@ -218,8 +218,7 @@
               </p>
             </div>
           </div>
-
-          <div class="slider__slide slider__slide--prices slider__slide--prices-r1">
+          <div class="prices__slider__slide">
             <div class="prices__slide-title-block">
               <h3 class="prices__slide-title">
                 Slide1
@@ -247,7 +246,7 @@
               <div class="prices__item-availability prices__item-availability--no"></div>
             </div>
           </div>
-          <div class="slider__slide slider__slide--prices slider__slide--prices-r2">
+          <div class="prices__slider__slide">
             <div class="prices__slide-title-block prices__slide-title-block--hit">
               <span class="prices__hit-label">хит</span>
               <h3 class="prices__slide-title">
@@ -276,7 +275,7 @@
               <div class="prices__item-availability prices__item-availability--no"></div>
             </div>
           </div>
-          <div class="slider__slide slider__slide--prices slider__slide--prices-r3">
+          <div class="prices__slider__slide">
             <div class="prices__slide-title-block">
               <h3 class="prices__slide-title">
                 Slide3

@@ -1,0 +1,66 @@
+.slider-switches {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  &--reviews {
+    bottom: 4%;
+  }
+  &--prices {
+    bottom: -18.5%;
+  }
+}
+
+.slider-switches__switch {
+  position: relative;
+  margin-right: 26px;
+  cursor: pointer;
+  &:last-of-type {
+    margin-right: 0;
+  }
+  &::before {
+    @include pseudo;
+    top: 50%;
+    left: 50%;
+    width: 6px;
+    height: 6px;
+    background-color: rgba(126, 134, 143, 0.7);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &:hover::before {
+    background-color: #7e868f;
+  }
+  &:active::before {
+    background-color: rgba(126, 134, 143, 0.3);
+  }
+}
+
+.reviews__slider-input[id="review-r1"]:checked~.slider-switches>.slider-switches__switch[for="review-r1"]::after,
+.reviews__slider-input[id="review-r2"]:checked~.slider-switches>.slider-switches__switch[for="review-r2"]::after,
+.reviews__slider-input[id="review-r3"]:checked~.slider-switches>.slider-switches__switch[for="review-r3"]::after,
+.prices__slider-input[id="price-r1"]:checked~.slider-switches>.slider-switches__switch[for="price-r1"]::after,
+.prices__slider-input[id="price-r2"]:checked~.slider-switches>.slider-switches__switch[for="price-r2"]::after,
+.prices__slider-input[id="price-r3"]:checked~.slider-switches>.slider-switches__switch[for="price-r3"]::after {
+  @include pseudo;
+  top: 50%;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  border: 3px solid $color-indigo;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+//Tablet(660px)
+@media #{$tablet} {
+  .slider-switches {
+    &--reviews {
+      bottom: 2%; 
+    }
+    &--prices {
+      display: none;
+    }
+  }
+}
