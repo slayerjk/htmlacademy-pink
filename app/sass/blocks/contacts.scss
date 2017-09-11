@@ -47,3 +47,49 @@
   background-size: contain;
   z-index: 1;
 }
+
+//Tablet(660px)
+@media #{$tablet} {
+  .contacts__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    padding: {
+      top: 43px;
+      bottom: 15px;
+    }
+    text-align: center;
+  }
+  
+  .contacts__slogan {
+    width: 86%;
+    margin-bottom: 43px;
+    padding: {
+      left: 7%;
+      right: 7%;
+    }
+    font-size: 4em;//40
+    outline: 1px solid red;
+  }
+  
+  .contacts__section {
+    width: 49%;
+    margin-bottom: 47px;
+    outline: 1px solid red;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+    &--custom-size {
+      width: 100%;
+    }
+  }
+  
+  .contacts__section-title {
+    margin-bottom: 7px;
+  }
+  
+  .contacts__section-info {
+    line-height: 1.2em;
+  }
+}
