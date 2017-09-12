@@ -49,6 +49,7 @@
 }
 
 .reviews__testimonial {
+  width: 100%;
   font: 1.4em/2.1428571429em $font-open-sans;//14/30
   color: $color-indigo;
 }
@@ -64,6 +65,7 @@
   z-index: 1;
 }
 
+/*
 //Tablet(660px)
 @media #{$tablet} {
   .reviews__wrapper {
@@ -80,7 +82,6 @@
       right: 5.11%; 
     }
     text-align: left;
-    outline: 1px solid red;
   }
   
   .reviews__sci-fact-icon {
@@ -88,8 +89,6 @@
     top: 60px;
     left: 3.4%;
     width: 237px;
-    
-    outline: 1px solid red;
   }
   
   .reviews__sci-fact-title {
@@ -108,8 +107,17 @@
     font: 1.4em/1.7142857143em $font-open-sans;//14/24
     color: $color-pink;
     text-decoration: underline;
+    &:hover,
+    &:active {
+      color: $color-indigo;
+      text-decoration: none;
+    }
+    &:active {
+      text-decoration: none;
+      opacity: 0.3;
+    }
   }
-  
+    
   .reviews__slider-wrapper {
     height: 238px;
     padding: {
@@ -145,3 +153,4 @@
     color: $color-indigo;
   }
 }
+*/

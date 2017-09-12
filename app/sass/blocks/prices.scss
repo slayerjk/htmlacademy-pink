@@ -1,5 +1,11 @@
 .prices__wrapper {
+  background-color: $color-grey;
+}
+
+.prices__inner-wrapper {
   height: 380px;
+  max-width: 400px;
+  margin: 0 auto;
   padding: {
       top: 120px;
     }
@@ -8,18 +14,18 @@
 }
 
 .prices__slider {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
 }
 
 .prices__slider-wrapper {
-  position: relative;
+  position: absolute;
+  left: 50%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  transform: translateX(-50%);
   transition: transform 0.3s linear;
-  }
+}
 
 .prices__slider-input {
   display: none;
@@ -31,26 +37,32 @@
   justify-content: flex-start;
   align-items: stretch;
   border-right: 2px solid $color-grey;
+  &--hidden-for-mobile {
+    display: none;
+  }
 }
 
 .prices__slider-input[id="price-r1"]:checked~.prices__slider-wrapper {
   display: flex;
-  transform: translateX(20px);
+  transform: translateX(-135px);//-17%
 }
 
 .prices__slider-input[id="price-r2"]:checked~.prices__slider-wrapper {
   display: flex;
-  transform: translateX(-256px);
+  transform: translateX(-415px);//-256-50%
 }
 
 .prices__slider-input[id="price-r3"]:checked~.prices__slider-wrapper {
   display: flex;
-  transform: translateX(-534px);
+  transform: translateX(-690px);//-534-83%
 }
+
 
 .prices__slide-title-block,
 .prices__item {
   width: 276px;
+  border: none;
+  outline: 1px solid #e5e5e5;
 }
 
 .prices__slide-title-block {
@@ -127,10 +139,12 @@
   }
 }
 
+/*
 //Tablet(660px)
 @media #{$tablet} {
-  .prices__wrapper {
+  .prices__inner-wrapper {
     height: 290px;
+    max-width: 100%;
     padding: {
       top: 105px;
       bottom: 0;
@@ -156,6 +170,9 @@
     justify-content: flex-start;
     align-items: flex-start;
     border-right: 2px solid $color-grey;
+    &--hidden-for-mobile {
+      display: flex;
+    }
   }
     
   .prices__slider-input[id="price-r2"]:checked~.prices__slider-wrapper {
@@ -165,8 +182,6 @@
   .prices__slide-title-block,
   .prices__item {
     width: 155px;
-    border: none;
-    outline: 2px solid #e5e5e5;
   }
   
   .prices__item {
@@ -232,3 +247,4 @@
     padding-right: 0px;
   }
 }
+*/

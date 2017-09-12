@@ -4,10 +4,22 @@
   overflow: hidden;
 }
 
+.map__decor {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  width: 100%;
+  height: 62px;
+  background: url("../../img/bg-triangle-white-footer.svg") no-repeat center;
+  background-size: contain;
+  transform: translate(-50%);
+  z-index: 1;
+}
+
 .map__link {
-  width: 320px;
-  height: 625px;
-  background: url("../../img/bg-map-mobile@1x.png") no-repeat center -445px;
+  height: 100%;
+  background: url("../../img/bg-map-mobile.png") no-repeat center 100%;
+  background-size: cover;
   &::before,
   &::after {
     @include pseudo;
@@ -28,38 +40,33 @@
   }
 }
 
-//Retina 2x 320px(mobile)
-@media only screen and (min-width: 320px) {
-  @media #{$retina} {
-    .map__link {
-      background: url("../../img/bg-map-mobile@2x.jpg") no-repeat center -445px;
-      background-size: 320px auto;
-    }
-  }
-}
-
+/*
 //Tablet(660px)
 @media #{$tablet} {
+  .map__wrapper {
+    height: 370px;
+  }
+  
+  .map__decor {
+    top: -45px;
+    height: 150px;
+  }
+  
   .map__link {
-    width: 320px;
-    height: 625px;
-    background: url("../../img/bg-map-tablet@1x.jpg") no-repeat center -445px;
+    width: 700px;
+    height: 848px;
+    background: url("../../img/bg-map-tablet@1x.jpg") no-repeat -20px -350px;
     &::before,
     &::after {
-      top: 111px;
-      left: 50%; 
-      border-radius: 50%;
-      transform: translate(-50%, -50%);
+      top: 207px;
     }
-    &::before {
-      width: 35px;
-      height: 35px;
-      background-color: #fff;
-    }
-    &::after {
-      width: 15px;
-      height: 15px;
-      background-color: #d22856;
+  }
+  
+  @media #{$retina} {
+    .map__link {
+      background: url("../../img/bg-map-tablet@2x.jpg") no-repeat -20px -365px;
+      background-size: 700px auto;
     }
   }
 }
+*/

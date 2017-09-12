@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  width: 55.6%;//178
+  width: 178px;//178
   margin-bottom: 39px;
 }
 
@@ -26,3 +26,12 @@
   @include center;
   fill: $color-pink;
 }
+
+/*
+//Tablet(660px)
+@media #{$tablet} {
+  .socials {
+    width: 178px;//178
+  }
+}
+*/

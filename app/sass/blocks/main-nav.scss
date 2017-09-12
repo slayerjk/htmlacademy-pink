@@ -65,7 +65,18 @@
   }
 }
 
+/*
+//Tablet (660px)
 @media #{$tablet} {
+  .main-nav__menu-toggle {
+    position: absolute;
+    top: 44px;
+    right: 3%;
+    &--active {
+      right: 0.9%;
+    }
+  } 
+  
   .main-nav__logo {
     padding: {
       top: 26px;
@@ -78,18 +89,6 @@
   .main-nav__logo-img {
     width: 147px;
     height: 41px;
-    outline: 1px solid red;
   }
 }
-
-//Tablet (660px)
-@media #{$tablet} {
-  .main-nav__menu-toggle {
-    position: absolute;
-    top: 44px;
-    right: 3%;
-    &--active {
-      right: 0.9%;
-    }
-  } 
-}
+*/
