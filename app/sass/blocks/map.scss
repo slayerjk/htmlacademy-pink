@@ -17,9 +17,11 @@
 }
 
 .map__link {
+  width: 100%;
   height: 100%;
-  background: url("../../img/bg-map-mobile.png") no-repeat center 100%;
+  background: #fff url("../../img/bg-map-mobile.png") no-repeat center 100%;
   background-size: cover;
+  
   &::before,
   &::after {
     @include pseudo;
@@ -40,7 +42,7 @@
   }
 }
 
-/*
+
 //Tablet(660px)
 @media #{$tablet} {
   .map__wrapper {
@@ -53,9 +55,9 @@
   }
   
   .map__link {
-    width: 700px;
     height: 848px;
     background: url("../../img/bg-map-tablet@1x.jpg") no-repeat -20px -350px;
+    background-size: cover;
     &::before,
     &::after {
       top: 207px;
@@ -69,4 +71,3 @@
     }
   }
 }
-*/

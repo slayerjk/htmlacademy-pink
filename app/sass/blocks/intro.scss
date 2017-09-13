@@ -94,7 +94,7 @@
   }  
 }
 
-/*
+
 //Tablet(660px)
 @media #{$tablet} {
   .intro__wrapper {
@@ -108,7 +108,10 @@
       url("../../img/iphone-hand-tablet@1x.png") no-repeat 51% 100%,
       url("../../img/bg-back-tablet@1x.jpg") no-repeat center 100%;
     &--not-index {
-      height: 168px;
+      height: 258px;
+      padding: {
+        top: 70px;
+      }
       background: url("../../img/bg-back-tablet@1x.jpg") no-repeat center 24%;
     }
   }
@@ -131,7 +134,7 @@
       left: 6.25%;
       right: 6.25%;
     }
-    font: 2.4em $font-open-sans-light;//24
+    font: 5em $font-open-sans-light;//50
     line-height: 1.2em;
     &--index {
       display: inline;
@@ -176,7 +179,10 @@
       background-size: 
         700px auto, 
         1200px auto;
+      &--not-index {
+        background: url("../../img/bg-back-tablet@2x.jpg") no-repeat center 24%;
+        background-size: 1200px auto;
+    }
     }
   }  
 }
-*/
