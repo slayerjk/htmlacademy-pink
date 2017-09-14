@@ -86,205 +86,215 @@
     <div class="media__wrapper wrapper-global">
       <div class="media__items">
 
-        <div class="media__item">
-          <a href="#" class="media__item-img-link media__item-img-link--fullwidth">
-            <span class="media__item-dayly-panorama">
-                Панорама дня
+        <div class="media__item media__item--panorama">
+          <a href="#" class="media__item-img-link media__item-img-link--panorama">
+            <span class="media__item-panorama-text">
+              Панорама дня
             </span>
             <picture>
-              <img class="media__item-img media__item-img--fullwidth" src="img/panorama-mobile@1x.jpg" width="320" height="137" srcset="img/panorama-mobile@2x.jpg 2x" alt="panorama-img">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+              <img class="media__item-img media__item-img--panorama" src="img/panorama-mobile@1x.jpg" width="320" height="137" srcset="img/panorama-mobile@2x.jpg 2x" alt="panorama-img">
             </picture>
           </a>
-          <div class="media__item-desc-block">
-            <div class="media__item-desc-block-wrapper">
-              <div class="media__item-author-block">
+          <div class="media__item-desc-block media__item-desc-block--panorama">
+            <div class="media__item-desc-block-wrapper media__item-desc-block-wrapper--panorama">
+              <div class="media__item-author-block media__item-author-block--panorama">
                 <span class="media__item-author">
-              Анна
-            </span>
+                  Анна
+                </span>
                 <span class="media__item-post-time">
-              (5 минут назад)
-          </span>
+                  (5 минут назад)
+                </span>
               </div>
-              <p class="media__item-desc">
+              <p class="media__item-desc media__item-desc--panorama">
                 Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
               </p>
-              <div class="media__item-like-block">
-                <a href="#" class="media__item-like-link">
-              Нравится: 215
-            </a>
+              <div class="media__item-like-block media__item-like-block--panorama">
+                <a href="#" class="media__item-like-link media__item-like-link--panorama">
+                  Нравится: 215
+                </a>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="media__item">
-          <a href="#" class="media__item-img-link">
-            <picture>
-              <img class="media__item-img" src="img/photo-1-mobile@1x.jpg" width="280" height="180" srcset="img/img/photo-1-mobile@2x.jpg 2x" alt="photo-1">
-            </picture>
-          </a>
-          <div class="media__item-desc-block">
-            <div class="media__item-desc-block-wrapper">
-              <div class="media__item-author-block">
-                <span class="media__item-author">
+        <div class="media__wrapper-inner">
+
+          <div class="media__item">
+            <a href="#" class="media__item-img-link">
+              <picture>
+                <source media="(min-width: 660px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-mobile@2x.jpg 2x">
+                <img class="media__item-img" src="img/photo-1-mobile@1x.jpg" width="280" height="180" srcset="img/img/photo-1-mobile@2x.jpg 2x" alt="photo-1">
+              </picture>
+            </a>
+            <div class="media__item-desc-block">
+              <div class="media__item-desc-block-wrapper">
+                <div class="media__item-author-block">
+                  <span class="media__item-author">
               Левон
             </span>
-                <span class="media__item-post-time">
+                  <span class="media__item-post-time">
               (5 часов назад)
             </span>
-              </div>
-              <p class="media__item-desc">
-                Вчера он на луну летал, сегодня в руки к нам попал.
-              </p>
-              <div class="media__item-like-block">
-                <a href="#" class="media__item-like-link">
+                </div>
+                <p class="media__item-desc">
+                  Вчера он на луну летал, сегодня в руки к нам попал.
+                </p>
+                <div class="media__item-like-block">
+                  <a href="#" class="media__item-like-link">
               Нравится: 356
             </a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="media__item">
-          <a href="#" class="media__item-img-link">
-            <picture>
-              <img class="media__item-img" src="img/photo-2-mobile@1x.jpg" width="280" height="180" srcset="img/photo-2-mobile@2x.jpg 2x" alt="photo2">
-            </picture>
-          </a>
-          <div class="media__item-desc-block">
-            <div class="media__item-desc-block-wrapper">
-              <div class="media__item-author-block">
-                <span class="media__item-author">
+          <div class="media__item">
+            <a href="#" class="media__item-img-link">
+              <picture>
+                <source media="(min-width: 660px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-mobile@2x.jpg 2x">
+                <img class="media__item-img" src="img/photo-2-mobile@1x.jpg" width="280" height="180" srcset="img/photo-2-mobile@2x.jpg 2x" alt="photo2">
+              </picture>
+            </a>
+            <div class="media__item-desc-block">
+              <div class="media__item-desc-block-wrapper">
+                <div class="media__item-author-block">
+                  <span class="media__item-author">
               Антон
             </span>
-                <span class="media__item-post-time">
+                  <span class="media__item-post-time">
               (12 часов назад)
             </span>
-              </div>
-              <p class="media__item-desc">
-                Соседи будут рады!
-              </p>
-              <div class="media__item-like-block">
-                <a href="#" class="media__item-like-link">
+                </div>
+                <p class="media__item-desc">
+                  Соседи будут рады!
+                </p>
+                <div class="media__item-like-block">
+                  <a href="#" class="media__item-like-link">
               Нравится: 666
             </a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="media__item">
-          <a href="#" class="media__item-img-link">
-            <picture>
-              <img class="media__item-img" src="img/photo-3-mobile@1x.jpg" width="280" height="180" srcset="img/photo-3-mobile@2x.jpg 2x" alt="photo3">
-            </picture>
-          </a>
-          <div class="media__item-desc-block">
-            <div class="media__item-desc-block-wrapper">
-              <div class="media__item-author-block">
-                <span class="media__item-author">
+          <div class="media__item">
+            <a href="#" class="media__item-img-link">
+              <picture>
+                <source media="(min-width: 660px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-mobile@2x.jpg 2x">
+                <img class="media__item-img" src="img/photo-3-mobile@1x.jpg" width="280" height="180" srcset="img/photo-3-mobile@2x.jpg 2x" alt="photo3">
+              </picture>
+            </a>
+            <div class="media__item-desc-block">
+              <div class="media__item-desc-block-wrapper">
+                <div class="media__item-author-block">
+                  <span class="media__item-author">
               Борис
             </span>
-                <span class="media__item-post-time">
+                  <span class="media__item-post-time">
               (20 часов назад)
             </span>
-              </div>
-              <p class="media__item-desc">
-                Здесь могла быть ваша цитата о высоком и вечном.
-              </p>
-              <div class="media__item-like-block">
-                <a href="#" class="media__item-like-link">
+                </div>
+                <p class="media__item-desc">
+                  Здесь могла быть ваша цитата о высоком и вечном.
+                </p>
+                <div class="media__item-like-block">
+                  <a href="#" class="media__item-like-link">
               Нравится: 215
             </a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="media__item">
-          <a href="#" class="media__item-img-link">
-            <picture>
-              <img class="media__item-img" src="img/photo-4-mobile@1x.jpg" width="280" height="180" srcset="img/photo-4-mobile@2x.jpg 2x" alt="photo4">
-            </picture>
-          </a>
-          <div class="media__item-desc-block">
-            <div class="media__item-desc-block-wrapper">
-              <div class="media__item-author-block">
-                <span class="media__item-author">
+          <div class="media__item">
+            <a href="#" class="media__item-img-link">
+              <picture>
+                <source media="(min-width: 660px)" srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-mobile@2x.jpg 2x">
+                <img class="media__item-img" src="img/photo-4-mobile@1x.jpg" width="280" height="180" srcset="img/photo-4-mobile@2x.jpg 2x" alt="photo4">
+              </picture>
+            </a>
+            <div class="media__item-desc-block">
+              <div class="media__item-desc-block-wrapper">
+                <div class="media__item-author-block">
+                  <span class="media__item-author">
               Сергей
             </span>
-                <span class="media__item-post-time">
+                  <span class="media__item-post-time">
               (25 часов назад)
             </span>
-              </div>
-              <p class="media__item-desc">
-                Самая кубанская в мире!
-              </p>
-              <div class="media__item-like-block">
-                <a href="#" class="media__item-like-link">
+                </div>
+                <p class="media__item-desc">
+                  Самая кубанская в мире!
+                </p>
+                <div class="media__item-like-block">
+                  <a href="#" class="media__item-like-link">
               Нравится: 4
             </a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="media__item">
-          <a href="#" class="media__item-img-link">
-            <picture>
-              <img class="media__item-img" src="img/photo-5-mobile@1x.jpg" width="280" height="180" srcset="img/photo-5-mobile@2x.jpg 2x" alt="photo5">
-            </picture>
-          </a>
-          <div class="media__item-desc-block">
-            <div class="media__item-desc-block-wrapper">
-              <div class="media__item-author-block">
-                <span class="media__item-author">
+          <div class="media__item">
+            <a href="#" class="media__item-img-link">
+              <picture>
+                <source media="(min-width: 660px)" srcset="img/photo-5-tablet@1x.jpg 1x, img/photo-5-mobile@2x.jpg 2x">
+                <img class="media__item-img" src="img/photo-5-mobile@1x.jpg" width="280" height="180" srcset="img/photo-5-mobile@2x.jpg 2x" alt="photo5">
+              </picture>
+            </a>
+            <div class="media__item-desc-block">
+              <div class="media__item-desc-block-wrapper">
+                <div class="media__item-author-block">
+                  <span class="media__item-author">
               Максим
             </span>
-                <span class="media__item-post-time">
+                  <span class="media__item-post-time">
               (40 часов назад)
             </span>
-              </div>
-              <p class="media__item-desc">
-                Где снег-то?
-              </p>
-              <div class="media__item-like-block">
-                <a href="#" class="media__item-like-link">
+                </div>
+                <p class="media__item-desc">
+                  Где снег-то?
+                </p>
+                <div class="media__item-like-block">
+                  <a href="#" class="media__item-like-link">
               Нравится: 150
             </a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="media__item">
-          <a href="#" class="media__item-img-link">
-            <picture>
-              <img class="media__item-img" src="img/photo-6-mobile@1x.jpg" width="280" height="180" srcset="img/photo-6-mobile@2x.jpg 2x" alt="photo6">
-            </picture>
-          </a>
-          <div class="media__item-desc-block">
-            <div class="media__item-desc-block-wrapper">
-              <div class="media__item-author-block">
-                <span class="media__item-author">
+          <div class="media__item">
+            <a href="#" class="media__item-img-link">
+              <picture>
+                <source media="(min-width: 660px)" srcset="img/photo-6-tablet@1x.jpg 1x, img/photo-6-mobile@2x.jpg 2x">
+                <img class="media__item-img" src="img/photo-6-mobile@1x.jpg" width="280" height="180" srcset="img/photo-6-mobile@2x.jpg 2x" alt="photo6">
+              </picture>
+            </a>
+            <div class="media__item-desc-block">
+              <div class="media__item-desc-block-wrapper">
+                <div class="media__item-author-block">
+                  <span class="media__item-author">
               Надежда
             </span>
-                <span class="media__item-post-time">
+                  <span class="media__item-post-time">
               (45 часов назад)
             </span>
-              </div>
-              <p class="media__item-desc">
-                Всем GM и взаимные лайки!
-              </p>
-              <div class="media__item-like-block">
-                <a href="#" class="media__item-like-link">
+                </div>
+                <p class="media__item-desc">
+                  Всем GM и взаимные лайки!
+                </p>
+                <div class="media__item-like-block">
+                  <a href="#" class="media__item-like-link">
               Нравится: 2560
             </a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
+        </div>
       </div>
 
       <div class="desc-block desc-block--video">
@@ -296,6 +306,7 @@
       <div class="media__post-photo">
         <div class="media__post-photo-wrapper">
           <picture>
+            <source media="(min-width: 660px)" srcset="img/photo-7-tablet@1x.jpg 1x, img/photo-7-mobile@2x.jpg 2x">
             <img class="media__post-img" src="img/photo-7-mobile@1x.jpg" width="280" height="374" srcset="img/photo-7-mobile@2x.jpg 2x" alt="post-img">
           </picture>
           <div class="media__post-manage">

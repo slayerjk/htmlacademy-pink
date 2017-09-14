@@ -28,3 +28,23 @@
   font: 1.4em/2.1428571429em $font-open-sans; //14/30
   color: $color-indigo;
 }
+
+//Tablet(660px)
+@media #{$tablet} {
+  .desc-block {
+    padding: {
+      top: 92px;
+      bottom: 76px;
+    }
+    &--video {
+      padding: {
+        top: 45px;
+        bottom: 69px;
+    }
+    }
+  }
+  
+  .desc-block__desc {
+    font: 1.8em/1.6666666667em $font-open-sans; //18/30
+  }
+}
