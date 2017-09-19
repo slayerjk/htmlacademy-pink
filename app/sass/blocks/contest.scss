@@ -96,7 +96,7 @@
   position: relative;
   width: 75%;
   padding: {
-    left: 25%;
+    left: 70px;
   }
   text-align: left;
   cursor: pointer;
@@ -135,7 +135,7 @@
 .contest__input[id="tower"]:checked + .contest__label--select[for="tower"]::after,
 .contest__input[id="demolish"]:checked + .contest__label--select[for="demolish"]::after {
   top: 13%;
-  left: 3.9%;
+  left: 10px;
   width: 21px;
   height: 20px;
   background: url("../../img/icons/icon-tick.svg") no-repeat center;
@@ -152,7 +152,7 @@
 .contest__input[id="pink-android"]:checked + .contest__label--select[for="pink-android"]::after,
 .contest__input[id="pink-windows"]:checked + .contest__label--select[for="pink-windows"]::after {
   top: 50%;
-  left: 4%;
+  left: 11px;
   width: 16px;
   height: 16px;
   border-radius: 50%;
@@ -193,5 +193,110 @@
   color: $color-indigo;
   &--pink {
     color: $color-pink
+  }
+}
+
+//Tablet(660px)
+@media #{$tablet} {
+  .contest__wrapper {
+    padding: {
+      top: 0px;
+    }
+  }
+  
+  .contest__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding: {
+      left: 3%;
+      right: 3%;
+    }
+  }
+  
+  .contest__form-section {
+    margin-bottom: 7px;
+    padding: {
+      top: 0px;
+      bottom: 0px;
+      left: 9.5%;
+      right: 9.5%;
+    }
+    border:2px solid #e5e5e5;
+    border-top: none;
+    &:last-of-type {
+      margin-bottom: 0px;
+    }
+    &--grey {
+      background-color: #fff;
+    }
+    &--user {
+      order: 1;
+      padding: {
+        left: 0%;
+        right: 0%;
+      }
+      border: none;
+    }
+    &--os {
+      order: 2;
+    }
+    &--contact-data {
+      order: 3;
+    }
+    &--achievements {
+      order: 4;
+    }
+    &--emotions {
+      order: 5;
+    }
+    &--submit {
+      order: 6;
+    }
+  }
+  
+  .contest__form-block {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-bottom: 52px;
+    &:last-of-type {
+      margin-bottom: none;
+    }
+  }
+  
+  .contest__input {
+    width: 100%;
+    margin-right: auto;
+    padding: {
+      top: 14px;
+      bottom: 15px;
+      left: 22px;
+      right: 22px;
+    }
+    &--error-js {
+      font-size: 1.3em;
+    }
+  }
+
+  .contest__label {
+    margin-right: 18px;
+    &--title {
+      margin-bottom: 0px;
+      padding-left: 0;
+    }
+  }
+  
+  .contest__form-section-title {
+    position: relative;
+    margin-bottom: 45px;
+    padding: {
+      left: 6.25%;
+      right: 6.25%;
+    }
+    &--os {
+      margin-bottom: 40px;
+    }
   }
 }

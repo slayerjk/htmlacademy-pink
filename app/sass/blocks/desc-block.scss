@@ -27,6 +27,9 @@
 .desc-block__desc {
   font: 1.4em/2.1428571429em $font-open-sans; //14/30
   color: $color-indigo;
+  &--visually-invisible-for-mobile {
+    display: none;
+  }
 }
 
 //Tablet(660px)
@@ -40,11 +43,21 @@
       padding: {
         top: 45px;
         bottom: 69px;
+      }
     }
+    &--contest {
+      padding: {
+        left: 11%;
+        right: 11%;
+        bottom: 71px;
+      }
     }
   }
   
   .desc-block__desc {
     font: 1.8em/1.6666666667em $font-open-sans; //18/30
+    &--visually-invisible-for-mobile {
+      display: inline;
+    }
   }
 }

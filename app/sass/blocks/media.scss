@@ -348,14 +348,15 @@
     }
   }
   
-  .media__post-img,
   .media__post-manage {
     width: 100%;//300
     height: 400px;
   }
   
   .media__post-img {
-    margin-bottom: 38px;
+    margin: {
+      bottom: 38px;//38
+    }
   }
   
     
