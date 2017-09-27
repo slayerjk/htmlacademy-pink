@@ -90,6 +90,9 @@
   &--os {
     margin-bottom: 40px;
   }
+  &--visually-hidden-mobile {
+    display: none;
+  }
 }
 
 .contest__label--select {
@@ -216,15 +219,15 @@
   }
   
   .contest__form-section {
-    margin-bottom: 7px;
+    position: relative;
+    margin-bottom: 66px;
     padding: {
-      top: 0px;
-      bottom: 0px;
+      top: 40px;
+      bottom: 40px;
       left: 9.5%;
       right: 9.5%;
     }
     border:2px solid #e5e5e5;
-    border-top: none;
     &:last-of-type {
       margin-bottom: 0px;
     }
@@ -233,7 +236,10 @@
     }
     &--user {
       order: 1;
+      margin-bottom: 7px;
       padding: {
+        top: 0px;
+        bottom: 7px;
         left: 0%;
         right: 0%;
       }
@@ -264,6 +270,9 @@
     &:last-of-type {
       margin-bottom: none;
     }
+    &--select {
+      margin-bottom: 17px;
+    }
   }
   
   .contest__input {
@@ -286,17 +295,28 @@
       margin-bottom: 0px;
       padding-left: 0;
     }
+    &--select {
+      width: 75%;
+      padding: {
+        left: 60px;
+      }
+    }
   }
   
   .contest__form-section-title {
     position: relative;
-    margin-bottom: 45px;
+    top: -50px;
+    display: inline;
+    margin-bottom: 0;
     padding: {
-      left: 6.25%;
-      right: 6.25%;
+      left: 5%;
+      right: 5%;
     }
-    &--os {
-      margin-bottom: 40px;
+    background-color: #fff;
+    z-index: 1;
+    outline: 1px solid red;
+    &--visually-hidden-mobile {
+      display: inline;
     }
   }
 }
