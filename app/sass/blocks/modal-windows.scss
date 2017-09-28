@@ -51,3 +51,58 @@
 .modal-window__btn {
   width: 87.5%;
 }
+
+//Tablet(660px)
+@media #{$tablet} {
+  .modal-window {
+    width: 87.5%;
+    max-width: 460px;
+    padding: {
+      top: 34px;
+    }
+    border-radius: 5px;
+    &--error-window {
+      padding: {
+        bottom: 52px;
+      }
+    }
+  }
+
+  .modal-window__title {
+    margin-bottom: 23px;
+    padding: {
+      left: 22%;
+      right: 22%;
+    }
+    font-size: 3em;
+    line-height: 1.3333333333em;//40
+  }
+  
+  .modal-window__text-transfer {
+    display: none;
+  }
+  
+  .modal-window__desc {
+    margin-bottom: 38px;
+    padding: {
+      left: 15%;
+      right: 15%;
+    }
+    font-size: 1.8em;
+    line-height: 1.3333333333em;//24
+    &--success {
+      margin-bottom: 36px;
+    }
+  }
+
+  .modal-window__window-btn-section {
+    padding: {
+      top: 48px;
+      bottom: 50px;
+    }
+  }
+
+  .modal-window__btn {
+    width: 65%;
+  }
+}
