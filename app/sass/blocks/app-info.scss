@@ -52,3 +52,23 @@
     }
   }
 }
+
+//Desktop (1200px)
+@media #{$desktop} {
+  .app-info__slogan-block {
+    padding: {
+      top: 66px;
+      bottom: 84px;
+    }
+  }
+  
+  .app-info__slogan {
+    font-size: 5em;//50px
+    &--answer {
+      padding: {
+        left: 240px;
+        right: 240px;
+      }
+    }
+  }
+}

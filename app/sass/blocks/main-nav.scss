@@ -91,3 +91,56 @@
     height: 41px;
   }
 }
+
+//Desktop (1200px)
+@media #{$desktop} {
+  .main-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    width: 940px;
+    padding: {
+      top: 26px;
+      bottom: 40px;
+      left: 130px;
+      right: 130px;
+    }
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
+  
+  .main-nav__logo {
+    padding: 0;
+    background-color: transparent;
+  }
+  
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    width: 620px;
+    padding: {
+      top: 20px;
+    }
+    outline: 1px solid red;
+  }
+  
+  .main-nav__item {
+    width: auto;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+  }
+  
+  .main-nav__link {
+    font: 1.8em/1em $font-open-sans;//18/18
+    text-transform: none;
+  }
+}
