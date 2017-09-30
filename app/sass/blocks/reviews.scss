@@ -26,6 +26,14 @@
   text-align: center;
 }
 
+.reviews__slider-quotes-img-block {
+  display: none;
+}
+
+.reviews__js-slider-arrow-switch-4-desktop {
+  display: none;
+}
+
 .reviews__slider-slide {
   display: none;
   flex-direction: column;
@@ -125,6 +133,119 @@
       left: 3%;
       right: 3%;
     }
+  }
+  
+  .reviews__testimonial,
+  .reviews__review-author {
+    margin: 0; 
+  }
+  
+  .reviews__testimonial {
+    order: 1;
+    margin-bottom: 35px;
+    font-size: 1.8em;//18
+    line-height: 1.6666666667em;//18
+  }
+  
+  .reviews__review-author {
+    order: 2;
+    margin-bottom: 4px;
+    font-size: 2em;//20
+    line-height: 1.5em;//30
+  }
+  
+  .reviews__review-author-profession {
+    display: inline;
+    order: 3;
+    font: 1.4em/2.1428571429em $font-open-sans;//14/30
+    color: $color-indigo;
+  }
+}
+
+//Desktop (1200px)
+@media #{$desktop} {
+  .reviews__wrapper {
+    padding: {
+      top: 156px;
+    }
+    background-color: $color-grey;
+  }
+  
+  .reviews__sci-fact {
+    margin-bottom: 110px;
+    padding: {
+      left: 496px;
+      right: 170px; 
+    }
+  }
+  
+  .reviews__sci-fact-text-transfer {
+    display: none;
+    &--desc {
+      display: inline;
+    }
+  }
+  
+  .reviews__sci-fact-icon {
+    top: 65px;
+    left: 130px;
+    width: 300px;
+  }
+  
+  .reviews__sci-fact-title {
+    margin-bottom: 22px;
+  }
+  
+  .reviews__sci-fact-desc {
+    margin-bottom: 30px;
+    font-size: 1.8em;
+    line-height: 1.6666666667em;//30
+  }
+  
+  .reviews__sci-fact-to-article {
+    font-size: 1.8em;
+    line-height: 1.6666666667em;//30
+  }
+    
+  .reviews__slider-wrapper {
+    height: 238px;
+    padding: {
+      top: 74px;
+      bottom: 103px;
+      left: 230px;
+      right: 230px;
+    }
+    background-color: #fff;
+    outline: 1px solid red;
+  }
+  
+  .reviews__slider-quotes-img-block {
+    display: block;
+    margin-bottom: 50px;
+  }
+  
+  .reviews__js-slider-arrow-switch-4-desktop {
+    position: absolute;
+    top: 215px;
+    display: block;
+    width: 22px;
+    height: 42px;
+    cursor: pointer;
+    outline: 1px solid red;
+    &--left {
+      left: 130px;
+    }
+    &--right {
+      right: 130px;
+    }
+  }
+  
+  .reviews__slider-slide {
+    outline: 1px solid red;
+  }
+  
+  .reviews__testimonial-quotes-visually-hidden-4-desktop {
+    display: none;
   }
   
   .reviews__testimonial,

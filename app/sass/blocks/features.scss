@@ -84,16 +84,18 @@
 @media #{$desktop} {
   .features__wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: stretch;
     width: 940px;
     padding: {
-      top: 347px;
-      bottom: 42px;
+      top: 47px;
+      bottom: 0px;
       left: 130px;
       right: 130px;
     }
     text-align: center;
+    overflow: visible;
+    outline: 1px solid red;
   }
   
   .features__desc-img {
@@ -102,23 +104,38 @@
   
   .features__item {
     position: relative;
-    width: 300px;
-    padding: 0;
-    margin-bottom: 0px;
+    width: 240px;
+    margin: 0;
+    padding: {
+      top: 302px;
+      bottom: 0;
+      left: 30px;
+      right: 30px;
+    }
     outline: 1px solid red;
     &--mood {
-      
+      margin-right: 20px;
+    }
+    &--friends {
+      margin-left: auto;
     }
   }
   
   .features__item-img-block {
+    position: absolute;
+    top: -55px;
+    left: 50%;
+    width: 100%;
+    height: 302px;
+    transform: translateX(-50%);
+    z-index: 200;
     &--visually-desktop-only {
       display: block;
     }
   }
   
   .features__item-title {
-    margin-bottom: 22px;
+    margin-bottom: 25px;
     font-size: 3em;
     line-height: 1em;//30
     color: #000;

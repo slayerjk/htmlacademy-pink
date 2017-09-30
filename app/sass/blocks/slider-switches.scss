@@ -65,3 +65,12 @@
     }
   }
 }
+
+//Desktop (1200px)
+@media #{$desktop} {
+  .slider-switches {
+    &--reviews {
+      display: none;
+    }
+  }
+}
