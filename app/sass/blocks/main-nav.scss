@@ -103,15 +103,27 @@
     justify-content: space-between;
     align-items: stretch;
     flex-wrap: wrap;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
+  
+  .main-nav__inner-wrapper {
+    display: flex;
+    justify-content: space-between;
     width: 940px;
+    margin: 0 auto;
     padding: {
-      top: 26px;
+      top: 30px;
       bottom: 40px;
       left: 130px;
       right: 130px;
     }
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: 1;
+    outline: 1px solid red;
+  }
+  
+  .main-nav__logo {
+    width: 147px; 
   }
   
   .main-nav__logo {

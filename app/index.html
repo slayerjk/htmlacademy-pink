@@ -28,38 +28,40 @@
   <header class="page-header">
     <div class="page-header__wrapper wrapper-global">
       <nav class="main-nav">
-        <div class="main-nav__logo">
-          <a class="main-nav__logo-link">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
-              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-              <img class="main-nav__logo-img" src="img/logo-pink-white-mobile.svg" width="73" height="23" alt="pink-logo">
-            </picture>
-          </a>
-        </div>
-        <button class="main-nav__menu-toggle" type="button"></button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--active">
+        <div class="main-nav__inner-wrapper">
+          <div class="main-nav__logo">
+            <a class="main-nav__logo-link">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+                <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+                <img class="main-nav__logo-img" src="img/logo-pink-white-mobile.svg" width="73" height="23" alt="pink-logo">
+              </picture>
+            </a>
+          </div>
+          <button class="main-nav__menu-toggle" type="button"></button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--active">
               Главная
             </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="pink-media.html" class="main-nav__link">
+            </li>
+            <li class="main-nav__item">
+              <a href="pink-media.html" class="main-nav__link">
               Фотографии
             </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="pink-contest.html" class="main-nav__link">
+            </li>
+            <li class="main-nav__item">
+              <a href="pink-contest.html" class="main-nav__link">
               Конкурс
             </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive" class="main-nav__link">
+            </li>
+            <li class="main-nav__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive" class="main-nav__link">
               HTML Academy
             </a>
-          </li>
-        </ul>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
   </header>
@@ -67,19 +69,21 @@
   <section class="intro intro--index">
     <div class="intro__wrapper wrapper-global">
       <div class="intro__block-bg"></div>
-      <div class="intro__desc-block intro__desc-block--index">
-        <h1 class="intro__title intro__title--index">Взгляните на жизнь иначе!</h1>
-        <a href="#" class="intro__download-link">
+      <div class="intro__wrapper-inner">
+        <div class="intro__desc-block intro__desc-block--index">
+          <h1 class="intro__title intro__title--index">Взгляните на жизнь иначе!</h1>
+          <a href="#" class="intro__download-link">
           Скачать приложение
         </a>
-        <div class="intro__os-icons">
-          <img class="intro__os-icon intro__os-icon--apple" src="img/logo-apple.svg" width="47" height="57" alt="apple-logo">
-          <img class="intro__os-icon intro__os-icon--android" src="img/logo-android.svg" width="43" height="48" alt="android-logo">
-          <img class="intro__os-icon intro__os-icon--microsoft" src="img/logo-microsoft.svg" width="44" height="42" alt="microsoft-logo">
+          <div class="intro__os-icons">
+            <img class="intro__os-icon intro__os-icon--apple" src="img/logo-apple.svg" width="47" height="57" alt="apple-logo">
+            <img class="intro__os-icon intro__os-icon--android" src="img/logo-android.svg" width="43" height="48" alt="android-logo">
+            <img class="intro__os-icon intro__os-icon--microsoft" src="img/logo-microsoft.svg" width="44" height="42" alt="microsoft-logo">
+          </div>
+          <p class="intro__desc">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </p>
         </div>
-        <p class="intro__desc">
-          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-        </p>
       </div>
     </div>
   </section>
@@ -147,16 +151,16 @@
         <img class="reviews__sci-fact-icon" src="img/icons/icon-clock.png" width="298" height="345" alt="clock-icon">
         <h2 class="reviews__sci-fact-title">Эффект <br class="reviews__sci-fact-text-transfer">на 24 часа!</h2>
         <p class="reviews__sci-fact-desc">
-          Британские ученые провели исследования и доказали, 
+          Британские ученые провели исследования и доказали,
           <br class="reviews__sci-fact-text-transfer reviews__sci-fact-text-transfer--desc">что положительный эффект
           <br class="reviews__sci-fact-text-transfer">от использования приложения длится целые сутки!
         </p>
         <a href="#" class="reviews__sci-fact-to-article">Узнать больше об исследовании</a>
       </div>
       <div class="reviews__slider">
-        <input id="review-r1" class="reviews__slider-input reviews__slider-input--js1" type="radio" name="reviews-input" value="review-r1" checked>
-        <input id="review-r2" class="reviews__slider-input reviews__slider-input--js2" type="radio" name="reviews-input" value="review-r2">
-        <input id="review-r3" class="reviews__slider-input reviews__slider-input--js3" type="radio" name="reviews-input" value="review-r3">
+        <input id="review-r1" class="reviews__slider-input" type="radio" name="reviews-input" value="review-r1" checked>
+        <input id="review-r2" class="reviews__slider-input" type="radio" name="reviews-input" value="review-r2">
+        <input id="review-r3" class="reviews__slider-input" type="radio" name="reviews-input" value="review-r3">
         <div class="slider-switches slider-switches--reviews">
           <label for="review-r1" class="slider-switches__switch"></label>
           <label for="review-r2" class="slider-switches__switch"></label>
@@ -174,12 +178,12 @@
             </svg>
           </div>
           <div class="reviews__js-slider-arrow-switch-4-desktop reviews__js-slider-arrow-switch-4-desktop--left">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
+            <svg version="1.1" id="arrow-left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
               <path d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261 c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248 c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z"/>
             </svg>
           </div>
           <div class="reviews__js-slider-arrow-switch-4-desktop reviews__js-slider-arrow-switch-4-desktop--right">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
+            <svg version="1.1" id="arrow-right" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
               <path d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012 c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248 c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z"/>
             </svg>
           </div>
@@ -189,8 +193,7 @@
             </h3>
             <p class="reviews__review-author-profession">25 лет, водитель трамвая</p>
             <blockquote class="reviews__testimonial">
-              <span class="reviews__testimonial-quotes-visually-hidden-4-desktop">«</span>
-              Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
+              <span class="reviews__testimonial-quotes-visually-hidden-4-desktop">«</span> Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
               <span class="reviews__testimonial-quotes-visually-hidden-4-desktop">»</span>
             </blockquote>
           </div>
@@ -200,8 +203,7 @@
             </h3>
             <p class="reviews__review-author-profession">?? лет, @#$%!$%^</p>
             <blockquote class="reviews__testimonial">
-              <span class="reviews__testimonial-quotes-visually-hidden-4-desktop">«</span>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque reiciendis sequi ullam, dolorum! Eveniet pariatur suscipit voluptatum obcaecati harum expedita autem voluptas sint, vero, nisi quisquam
+              <span class="reviews__testimonial-quotes-visually-hidden-4-desktop">«</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque reiciendis sequi ullam, dolorum! Eveniet pariatur suscipit voluptatum obcaecati harum expedita autem voluptas sint, vero, nisi quisquam
               <span class="reviews__testimonial-quotes-visually-hidden-4-desktop">»</span>
             </blockquote>
           </div>
@@ -211,8 +213,7 @@
             </h3>
             <p class="reviews__review-author-profession">?? лет, @#$%!$%^</p>
             <blockquote class="reviews__testimonial">
-              <span class="reviews__testimonial-quotes-visually-hidden-4-desktop">«</span>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. In neque doloremque ipsum dicta adipisci voluptatum dolores, quibusdam, atque vel optio architecto, consectetur. Inventore voluptates mollitia nemo!
+              <span class="reviews__testimonial-quotes-visually-hidden-4-desktop">«</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. In neque doloremque ipsum dicta adipisci voluptatum dolores, quibusdam, atque vel optio architecto, consectetur. Inventore voluptates mollitia nemo!
               <span class="reviews__testimonial-quotes-visually-hidden-4-desktop">»</span>
             </blockquote>
           </div>
@@ -226,7 +227,7 @@
     <div class="prices__wrapper wrapper-global">
       <div class="prices__inner-wrapper">
         <div class="prices__slider">
-          <input id="price-r1" class="prices__slider-input" type="radio" name="prices-input" value="price-r1" checked>
+          <input id="price-r1" class="prices__slider-input" type="radio" name="prices-input" value="price-r1">
           <input id="price-r2" class="prices__slider-input" type="radio" name="prices-input" value="price-r2" checked>
           <input id="price-r3" class="prices__slider-input" type="radio" name="prices-input" value="price-r3">
           <div class="slider-switches slider-switches--prices">
@@ -450,7 +451,7 @@
   <script src="js/picturefill.min.js"></script>
 
   <!--<script src="js/script.min.js"></script>-->
-  <!--<script src="js/script.js"></script>-->
+  <script src="js/script.js"></script>
 
 </body>
 

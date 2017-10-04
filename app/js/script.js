@@ -54,12 +54,12 @@ $(document).ready(function () {
   navMenuState();
   
 /*Sliders behaviour*/
-  /*
+  /*Reviews slider - arrows switches*/
   $.fn.slider1Switcher = function () {
     var
-      $currentInput = $('.slider__input--js1:checked'),
+      $currentInput = $('.reviews__slider-input:checked'),
       $nextInput = $currentInput.next(),
-      $firstInput = $('.reviews__slider-input--js1').first();
+      $firstInput = $('.reviews__slider-input').first();
     $currentInput.removeAttr('checked');
     if ($nextInput.prop('type') === 'radio') {
       $nextInput.prop('checked', 'checked');
@@ -67,12 +67,37 @@ $(document).ready(function () {
       $nextInput = $firstInput.prop('checked', 'checked');
     }
   };
+  
+  /*Left-right switches*/
+  var
+    $currentInput = $('.reviews__slider-input:checked'),
+    $nextInput = $currentInput.next(),
+    $prevInput = $currentInput.prev(),
+    $firstInput = $('.reviews__slider-input').first(),
+    $lastInput = $('.reviews__slider-input').last();
+  $('.reviews__js-slider-arrow-switch-4-desktop--left').on('click', function () {
+    $currentInput.removeAttr('checked');
+    if ($prevInput.prop('type') === 'radio') {
+      $prevInput.prop('checked', 'checked');
+    } else {
+      $prevInput = $lastInput.prop('checked', 'checked');
+    }
+  });
+  $('.reviews__js-slider-arrow-switch-4-desktop--right').on('click', function () {
+    $currentInput.removeAttr('checked');
+    if ($nextInput.prop('type') === 'radio') {
+      $nextInput.prop('checked', 'checked');
+    } else {
+      $nextInput = $firstInput.prop('checked', 'checked');
+    }
+  });
+  /*--------------------------------------------------------*/
   
   $.fn.slider2Switcher = function () {
     var
-      $currentInput = $('.slider__input--js2:checked'),
+      $currentInput = $('.prices__slider-input:checked'),
       $nextInput = $currentInput.next(),
-      $firstInput = $('.reviews__slider-input--js2').first();
+      $firstInput = $('.prices__slider-input').first();
     $currentInput.removeAttr('checked');
     if ($nextInput.prop('type') === 'radio') {
       $nextInput.prop('checked', 'checked');
@@ -81,8 +106,8 @@ $(document).ready(function () {
     }
   };
   
+  /*  
   setInterval($.fn.slider1Switcher, 3000);
-  
   setInterval($.fn.slider2Switcher, 4000);
   */
   
