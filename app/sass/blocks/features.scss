@@ -83,19 +83,19 @@
 //Desktop (1200px)
 @media #{$desktop} {
   .features__wrapper {
+    padding: 0;
+    overflow: visible;
+  }
+  
+  .features__wrapper-inner {
     display: flex;
     justify-content: flex-start;
     align-items: stretch;
-    width: 940px;
     padding: {
       top: 47px;
       bottom: 0px;
-      left: 130px;
-      right: 130px;
     }
     text-align: center;
-    overflow: visible;
-    outline: 1px solid red;
   }
   
   .features__desc-img {

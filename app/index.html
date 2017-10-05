@@ -28,7 +28,7 @@
   <header class="page-header">
     <div class="page-header__wrapper wrapper-global">
       <nav class="main-nav">
-        <div class="main-nav__inner-wrapper">
+        <div class="main-nav__inner-wrapper wrapper-inner-global">
           <div class="main-nav__logo">
             <a class="main-nav__logo-link">
               <picture>
@@ -69,7 +69,7 @@
   <section class="intro intro--index">
     <div class="intro__wrapper wrapper-global">
       <div class="intro__block-bg"></div>
-      <div class="intro__wrapper-inner">
+      <div class="intro__wrapper-inner wrapper-inner-global">
         <div class="intro__desc-block intro__desc-block--index">
           <h1 class="intro__title intro__title--index">Взгляните на жизнь иначе!</h1>
           <a href="#" class="intro__download-link">
@@ -90,72 +90,77 @@
 
   <section class="app-info">
     <div class="app-info__wrapper wrapper-global">
-      <div class="app-info__slogan-block">
-        <p class="app-info__slogan app-info__slogan--question">
-          Устали от серости мегаполиса?
-        </p>
-        <p class="app-info__slogan app-info__slogan--answer">
-          Нам есть, что вам предложить!
-        </p>
-        <div class="app-info__decor"></div>
+      <div class="app-info__wrapper-inner wrapper-inner-global">
+        <div class="app-info__slogan-block">
+          <p class="app-info__slogan app-info__slogan--question">
+            Устали от серости мегаполиса?
+          </p>
+          <p class="app-info__slogan app-info__slogan--answer">
+            Нам есть, что вам предложить!
+          </p>
+        </div>
       </div>
+      <div class="app-info__decor"></div>
     </div>
   </section>
 
   <section class="features">
     <div class="features__wrapper wrapper-global">
-      <div class="features__item features__item--mood">
-        <div class="features__item-img-block features__item-img-block--visually-desktop-only features__item-img-block--mood">
-          <img class="features__item-img" src="img/iphone-screen-grayscale-desktop@1x.png" srcset="img/iphone-screen-grayscale-desktop@2x.png 2x" alt="iphone-grayscale">
+      <div class="features__wrapper-inner wrapper-inner-global">
+        <div class="features__item features__item--mood">
+          <div class="features__item-img-block features__item-img-block--visually-desktop-only features__item-img-block--mood">
+            <img class="features__item-img" src="img/iphone-screen-grayscale-desktop@1x.png" srcset="img/iphone-screen-grayscale-desktop@2x.png 2x" alt="iphone-grayscale">
+          </div>
+          <h2 class="features__item-title">
+            Поднимает настроение
+          </h2>
+          <p class="features__item-desc">
+            Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+          </p>
         </div>
-        <h2 class="features__item-title">
-          Поднимает настроение
-        </h2>
-        <p class="features__item-desc">
-          Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-        </p>
-      </div>
-      <div class="features__item features__item--change">
-        <div class="features__item-img-block features__item-img-block--visually-desktop-only features__item-img-block--change">
-          <img class="features__item-img" src="img/iphone-screen-pink-desktop@1x.png" srcset="img/iphone-screen-pink-desktop@2x.png 2x" alt="iphone-pink">
+        <div class="features__item features__item--change">
+          <div class="features__item-img-block features__item-img-block--visually-desktop-only features__item-img-block--change">
+            <img class="features__item-img" src="img/iphone-screen-pink-desktop@1x.png" srcset="img/iphone-screen-pink-desktop@2x.png 2x" alt="iphone-pink">
+          </div>
+          <h2 class="features__item-title">
+            Меняет мир вокруг
+          </h2>
+          <p class="features__item-desc">
+            Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы<br class="features__text-tranfer"> усилить эффект
+          </p>
         </div>
-        <h2 class="features__item-title">
-          Меняет мир вокруг
-        </h2>
-        <p class="features__item-desc">
-          Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы<br class="features__text-tranfer"> усилить эффект
-        </p>
-      </div>
-      <div class="features__item features__item--friends">
-        <div class="features__item-img-block features__item-img-block--visually-desktop-only features__item-img-block--friends">
-          <img class="features__item-img" src="img/iphone-screen-smile-desktop@1x.png" srcset="img/iphone-screen-smile-desktop@2x.png 2x" alt="iphone-smile">
+        <div class="features__item features__item--friends">
+          <div class="features__item-img-block features__item-img-block--visually-desktop-only features__item-img-block--friends">
+            <img class="features__item-img" src="img/iphone-screen-smile-desktop@1x.png" srcset="img/iphone-screen-smile-desktop@2x.png 2x" alt="iphone-smile">
+          </div>
+          <h2 class="features__item-title">
+            Заводит новых друзей
+          </h2>
+          <p class="features__item-desc">
+            Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
+          </p>
         </div>
-        <h2 class="features__item-title">
-          Заводит новых друзей
-        </h2>
-        <p class="features__item-desc">
-          Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
-        </p>
+        <picture>
+          <source media="(min-width: 660px)" srcset="img/iphone-screen-smile-tablet@1x.png 1x, img/iphone-screen-smile-tablet@2x.png 2x">
+          <img class="features__desc-img" src="img/iphone-screen-smile-mobile@1x.png" width="157" height="320" srcset="img/iphone-screen-smile-mobile@2x.png 2x" alt="iphone-img">
+        </picture>
       </div>
-      <picture>
-        <source media="(min-width: 660px)" srcset="img/iphone-screen-smile-tablet@1x.png 1x, img/iphone-screen-smile-tablet@2x.png 2x">
-        <img class="features__desc-img" src="img/iphone-screen-smile-mobile@1x.png" width="157" height="320" srcset="img/iphone-screen-smile-mobile@2x.png 2x" alt="iphone-img">
-      </picture>
-    </div>
     </div>
   </section>
 
   <section class="reviews">
     <div class="reviews__wrapper wrapper-global">
-      <div class="reviews__sci-fact">
-        <img class="reviews__sci-fact-icon" src="img/icons/icon-clock.png" width="298" height="345" alt="clock-icon">
-        <h2 class="reviews__sci-fact-title">Эффект <br class="reviews__sci-fact-text-transfer">на 24 часа!</h2>
-        <p class="reviews__sci-fact-desc">
-          Британские ученые провели исследования и доказали,
-          <br class="reviews__sci-fact-text-transfer reviews__sci-fact-text-transfer--desc">что положительный эффект
-          <br class="reviews__sci-fact-text-transfer">от использования приложения длится целые сутки!
-        </p>
-        <a href="#" class="reviews__sci-fact-to-article">Узнать больше об исследовании</a>
+      <div class="reviews__wrapper-inner wrapper-inner-global">
+        <div class="reviews__sci-fact">
+          <img class="reviews__sci-fact-icon" src="img/icons/icon-clock.png" width="298" height="345" alt="clock-icon">
+          <h2 class="reviews__sci-fact-title">Эффект <br class="reviews__sci-fact-text-transfer">на 24 часа!</h2>
+          <p class="reviews__sci-fact-desc">
+            Британские ученые провели исследования и доказали,
+            <br class="reviews__sci-fact-text-transfer reviews__sci-fact-text-transfer--desc">что положительный эффект
+            <br class="reviews__sci-fact-text-transfer">от использования приложения длится целые сутки!
+          </p>
+          <a href="#" class="reviews__sci-fact-to-article">Узнать больше об исследовании</a>
+        </div>
       </div>
       <div class="reviews__slider">
         <input id="review-r1" class="reviews__slider-input" type="radio" name="reviews-input" value="review-r1" checked>
@@ -166,7 +171,7 @@
           <label for="review-r2" class="slider-switches__switch"></label>
           <label for="review-r3" class="slider-switches__switch"></label>
         </div>
-        <div class="reviews__slider-wrapper">
+        <div class="reviews__slider-wrapper wrapper-inner-global">
           <div class="reviews__slider-quotes-img-block">
             <svg fill="#efefef" version="1.1" id="icon-quotes" class="reviews__slider-quotes-img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="78.672px" height="63.789px" viewBox="0 0 78.672 63.789" enable-background="new 0 0 78.672 63.789" xml:space="preserve">
               <g>
@@ -225,7 +230,7 @@
 
   <section class="prices">
     <div class="prices__wrapper wrapper-global">
-      <div class="prices__inner-wrapper">
+      <div class="prices__inner-wrapper wrapper-inner-global">
         <div class="prices__slider">
           <input id="price-r1" class="prices__slider-input" type="radio" name="prices-input" value="price-r1">
           <input id="price-r2" class="prices__slider-input" type="radio" name="prices-input" value="price-r2" checked>
@@ -351,30 +356,32 @@
 
   <section class="contacts">
     <div class="contacts__wrapper wrapper-global">
-      <p class="contacts__slogan">
-        Остались вопросы? Свяжитесь с нами!
-      </p>
-      <div class="contacts__section">
-        <h3 class="contacts__section-title">
-          Звоните:
-        </h3>
-        <span class="contacts__section-info">
+      <div class="contacts__wrapper-inner wrapper-inner-global">
+        <p class="contacts__slogan">
+          Остались вопросы? Свяжитесь с нами!
+        </p>
+        <div class="contacts__section contacts__section--call">
+          <h3 class="contacts__section-title">
+            Звоните:
+          </h3>
+          <span class="contacts__section-info">
           +7 (812) 555-66-66
         </span>
-      </div>
-      <div class="contacts__section">
-        <h3 class="contacts__section-title">
-          Пишите:
-        </h3>
-        <a href="mailto:mail@htmlacademy.ru" class="contacts__section-info contacts__section-info--mailto">mail@htmlacademy.ru</a>
-      </div>
-      <div class="contacts__section contacts__section--custom-size">
-        <h3 class="contacts__section-title">
-          Приезжайте в гости:
-        </h3>
-        <span class="contacts__section-info">
-          ул. Большая<br class="contacts__text-translate"> Конюшенная, 19/8
-        </span>
+        </div>
+        <div class="contacts__section contacts__section--write">
+          <h3 class="contacts__section-title">
+            Пишите:
+          </h3>
+          <a href="mailto:mail@htmlacademy.ru" class="contacts__section-info contacts__section-info--mailto">mail@htmlacademy.ru</a>
+        </div>
+        <div class="contacts__section contacts__section--custom-size contacts__section--come">
+          <h3 class="contacts__section-title">
+            Приезжайте в гости:
+          </h3>
+          <span class="contacts__section-info">
+            ул. Большая<br class="contacts__text-translate"> Конюшенная, 19/8
+          </span>
+        </div>
       </div>
     </div>
     <div class="map">

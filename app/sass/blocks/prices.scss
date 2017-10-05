@@ -245,5 +245,60 @@
 
 //Desktop (1200px)
 @media #{$desktop} {
-   
+  .prices__inner-wrapper {
+    height: auto;
+    padding: {
+      top: 152px;
+      bottom: 94px;
+    }
+  }
+  
+  .prices__slide-title-block,
+  .prices__item {
+    width: 235px;
+  }
+  
+  .prices__item {
+    min-height: 59px;
+  }
+  
+  .prices__slide-title-block {
+    position: relative;
+    padding: {
+      top: 15px;
+      bottom: 18px;
+    }
+    &--hit::before {
+      top: -13px;
+      left: -80px;
+      width: 100%;
+      height: 100%;
+      background: url("../../img/bg-hit.svg") no-repeat center;
+    }
+  }
+  
+  .prices__hit-label {
+    top: 13px;
+    left: 11px;
+    font-family: $font-open-sans;
+  }
+
+  .prices__slide-title {
+    font-size: 1.8em;
+    line-height: 1.6666666667em;
+  }
+  
+  .prices__cost {
+    font-size: 2.4em;
+    line-height: 1.25em;
+  }
+  
+  .prices__item-name {
+    padding-left: 22px;
+    font-size: 1.8em;
+    line-height: 1.6666666667em;
+    &--zero-font-tablet {
+      font-size: 0;
+    }  
+  }
 }

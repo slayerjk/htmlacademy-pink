@@ -165,17 +165,22 @@
 //Desktop (1200px)
 @media #{$desktop} {
   .reviews__wrapper {
-    padding: {
-      top: 156px;
-    }
+    padding: 0;
     background-color: $color-grey;
   }
+  
+  .reviews__wrapper-inner {
+    position: relative;
+    padding: {
+      top: 155px;
+    }
+    }
   
   .reviews__sci-fact {
     margin-bottom: 110px;
     padding: {
-      left: 496px;
-      right: 170px; 
+      left: 365px;
+      right: 40px; 
     }
   }
   
@@ -206,8 +211,13 @@
     font-size: 1.8em;
     line-height: 1.6666666667em;//30
   }
-    
+  
+  .reviews__slider {
+    background-color: #fff;
+  }
+  
   .reviews__slider-wrapper {
+    width: 740px;
     height: 238px;
     padding: {
       top: 74px;
@@ -263,14 +273,14 @@
   .reviews__review-author {
     order: 2;
     margin-bottom: 4px;
-    font-size: 2em;//20
-    line-height: 1.5em;//30
+    font-size: 2.4em;//24
+    line-height: 1.25em;//30
   }
   
   .reviews__review-author-profession {
     display: inline;
     order: 3;
-    font: 1.4em/2.1428571429em $font-open-sans;//14/30
-    color: $color-indigo;
+    font-size: 1.8em;
+    line-height: 1.6666666667em;
   }
 }

@@ -1,0 +1,11 @@
+//Desktop (1200px)
+@media #{$desktop} {
+  .wrapper-inner-global {
+    width: 940px;
+    margin: 0 auto;
+    padding: {
+      left: 130px;
+      right: 130px;  
+    }
+  } 
+}

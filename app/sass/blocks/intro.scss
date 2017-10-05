@@ -196,7 +196,7 @@
 //Desktop (1200px)
 @media #{$desktop} {
   .intro__block-bg {
-    height: 859px;
+    height: 853px;
     background: 
       url("../../img/iphone-hand-desktop@1x.png") no-repeat 58.5% 100%,
       url("../../img/bg-back-desktop@1x.jpg") no-repeat center 100%;
@@ -213,13 +213,13 @@
     @include center;
     width: 1200px;
     height: 859px;
-    margin: 0 auto;
+    padding: 0;
     outline: 1px solid red;
   }
   
   .intro__desc-block {
     &--index {
-      top: 224px;
+      top: 223px;
       left: 130px;
       width: 300px;
       padding: 0;
