@@ -259,10 +259,8 @@
   .intro__os-icons {
     margin-bottom: 32px;
   }
-}
 
-//Retina 2x 1200px(Desktop)
-@media #{$desktop} {
+  //Retina 2x 1200px(Desktop)
   @media #{$retina} {
     .intro__block-bg {
       background: 
@@ -274,7 +272,7 @@
       &--not-index {
         background: url("../../img/bg-back-desktop@1x.jpg") no-repeat center 28%;
         background-size: 2560px auto;
-    }
+      }
     }
   }  
 }

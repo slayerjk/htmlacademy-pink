@@ -37,7 +37,6 @@
   }
 }
 
-
 //Tablet(660px)
 @media #{$tablet} {
   .contacts__wrapper {
@@ -90,11 +89,9 @@
 @media #{$desktop} {
   .contacts__wrapper-inner {
     justify-content: space-between;
-    width: 860px;
     padding: {
       top: 65px;
-      left: 170px;
-      right: 170px;
+      bottom: 1px;
     }
     outline: 1px solid red;
   }
@@ -110,13 +107,10 @@
   }
   
   .contacts__section {
-    width: auto;
+    width: 300px;
     margin-bottom: 0px;
     padding: 0;
     outline: 1px solid red;
-    &--custom-size {
-      width: 200px;
-    }
     &--call {
       order: 1;
     }
@@ -129,10 +123,6 @@
   }
   
   .contacts__section-title {
-    margin-bottom: 7px;
-  }
-  
-  .contacts__section-info {
-    line-height: 1.2em;
+    margin-bottom: 23px;
   }
 }

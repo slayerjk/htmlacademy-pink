@@ -35,6 +35,10 @@
   }
 }
 
+.page-footer__logo--pink-decor-visible-4-desktop {
+  display: none;
+}
+
 .page-footer__made-by {
   display: flex;
   justify-content: space-between;
@@ -100,3 +104,27 @@
   }
 }
 */
+
+//Desktop (1200px)
+@media #{$desktop} {
+  .page-footer__inner-wrapper {
+    padding: {
+      top: 70px;
+    } 
+  }
+  
+ .page-footer__logo--pink-decor-visible-4-desktop {
+    display: block;
+  }
+  
+  .page-footer__made-by {
+    align-items: center;
+    width: 154px;
+    height: 35px;
+  }
+  
+  .page-footer__made-by-text {
+    font-size: 1.8em;
+    line-height: 1em;//18
+  }
+}
