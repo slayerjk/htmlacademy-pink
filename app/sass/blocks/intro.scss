@@ -129,7 +129,7 @@
       left: 3%;
       display: flex;
       flex-direction: column;
-      width: 45%;//300px;
+      width: 300px;
       padding: 0;
     }
   }
@@ -214,16 +214,13 @@
     width: 1200px;
     height: 859px;
     padding: 0;
-    outline: 1px solid red;
-  }
+   }
   
   .intro__desc-block {
     &--index {
       top: 223px;
       left: 130px;
-      width: 300px;
       padding: 0;
-      outline: 1px solid red;
     }
   }
   

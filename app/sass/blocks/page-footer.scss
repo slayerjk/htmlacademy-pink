@@ -96,31 +96,32 @@
   }
 }
 
-//660+(<1200)
-/*
-@media only screen and (min-width: 665px) {
-  .page-footer__logo-link {
-    margin-right: 0px;
-  }
-}
-*/
-
 //Desktop (1200px)
 @media #{$desktop} {
   .page-footer__inner-wrapper {
+    justify-content: flex-start;
     padding: {
-      top: 70px;
+      top: 74px;
     } 
+  }
+  
+  .page-footer__logo-link {
+    margin: 0;
   }
   
  .page-footer__logo--pink-decor-visible-4-desktop {
     display: block;
   }
   
+  .page-footer__logo--pink-decor-invisible-4-desktop {
+    display: none;
+  }
+  
   .page-footer__made-by {
     align-items: center;
     width: 154px;
     height: 35px;
+    margin-left: auto;
   }
   
   .page-footer__made-by-text {

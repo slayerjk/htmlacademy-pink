@@ -105,6 +105,12 @@
     color: #000;
   }
   
+  .reviews__sci-fact-text-transfer {
+    &--desc {
+      display: none;
+    }
+  }
+  
   .reviews__sci-fact-desc {
     margin-bottom: 10px;
     font: 1.4em/1.7142857143em $font-open-sans;//14/24
@@ -174,10 +180,10 @@
     padding: {
       top: 155px;
     }
-    }
+  }
   
   .reviews__sci-fact {
-    margin-bottom: 110px;
+    margin-bottom: 115px;
     padding: {
       left: 365px;
       right: 40px; 
@@ -218,7 +224,7 @@
   
   .reviews__slider-wrapper {
     width: 740px;
-    height: 238px;
+    height: 233px;
     padding: {
       top: 74px;
       bottom: 103px;
@@ -226,12 +232,14 @@
       right: 230px;
     }
     background-color: #fff;
-    outline: 1px solid red;
-  }
+   }
   
   .reviews__slider-quotes-img-block {
     display: block;
-    margin-bottom: 50px;
+    width: 79px;
+    height: 64px;
+    margin: 0 auto;
+    margin-bottom: 48px;
   }
   
   .reviews__js-slider-arrow-switch-4-desktop {
@@ -241,17 +249,12 @@
     width: 22px;
     height: 42px;
     cursor: pointer;
-    outline: 1px solid red;
-    &--left {
+     &--left {
       left: 130px;
     }
     &--right {
       right: 130px;
     }
-  }
-  
-  .reviews__slider-slide {
-    outline: 1px solid red;
   }
   
   .reviews__testimonial-quotes-visually-hidden-4-desktop {

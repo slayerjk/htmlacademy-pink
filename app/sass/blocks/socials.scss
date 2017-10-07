@@ -34,3 +34,10 @@
     width: 178px;//178
   }
 }
+
+//Desktop (1200px)
+@media #{$desktop} {
+  .socials {
+    margin-left: 235px;
+  }
+}
