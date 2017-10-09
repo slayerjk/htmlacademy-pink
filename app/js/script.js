@@ -54,7 +54,6 @@ $(document).ready(function () {
   navMenuState();
   
 /*Sliders behaviour*/
-  /*Reviews slider - arrows switches*/
   $.fn.slider1Switcher = function () {
     var
       $currentInput = $('.reviews__slider-input:checked'),
@@ -69,28 +68,28 @@ $(document).ready(function () {
   };
   
   /*Left-right switches*/
-  var
-    $currentInput = $('.reviews__slider-input:checked'),
-    $nextInput = $currentInput.next(),
-    $prevInput = $currentInput.prev(),
-    $firstInput = $('.reviews__slider-input').first(),
-    $lastInput = $('.reviews__slider-input').last();
+  var $currentInput = $('.reviews__slider-input:checked');
   $('.reviews__js-slider-arrow-switch-4-desktop--left').on('click', function () {
-    $currentInput.removeAttr('checked');
-    if ($prevInput.prop('type') === 'radio') {
-      $prevInput.prop('checked', 'checked');
-    } else {
-      $prevInput = $lastInput.prop('checked', 'checked');
+    $currentInput.removeAttr('checked').removeProp('checked');
+    if ($currentInput.hasClass('js-switch1')) {
+      $currentInput = $('.js-switch3').prop('checked', 'checked');
+    } else if ($currentInput.hasClass('js-switch2')) {
+      $currentInput = $('.js-switch1').prop('checked', 'checked');
+    } else if ($currentInput.hasClass('js-switch3')) {
+      $currentInput = $('.js-switch2').prop('checked', 'checked');
     }
   });
   $('.reviews__js-slider-arrow-switch-4-desktop--right').on('click', function () {
-    $currentInput.removeAttr('checked');
-    if ($nextInput.prop('type') === 'radio') {
-      $nextInput.prop('checked', 'checked');
-    } else {
-      $nextInput = $firstInput.prop('checked', 'checked');
+    $currentInput.removeAttr('checked').removeProp('checked');
+    if ($currentInput.hasClass('js-switch1')) {
+      $currentInput = $('.js-switch2').prop('checked', 'checked');
+    } else if ($currentInput.hasClass('js-switch2')) {
+      $currentInput = $('.js-switch3').prop('checked', 'checked');
+    } else if ($currentInput.hasClass('js-switch3')) {
+      $currentInput = $('.js-switch1').prop('checked', 'checked');
     }
   });
+    
   /*--------------------------------------------------------*/
   
   $.fn.slider2Switcher = function () {
@@ -108,6 +107,8 @@ $(document).ready(function () {
   
   /*  
   setInterval($.fn.slider1Switcher, 3000);
+  */
+  /*
   setInterval($.fn.slider2Switcher, 4000);
   */
   
