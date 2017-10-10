@@ -95,16 +95,16 @@
 
 				<div class="media__item media__item--panorama">
 					<a href="#" class="media__item-img-link media__item-img-link--panorama">
-            <span class="media__item-panorama-text">
+						<picture>
+							<source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+							<source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+							<img class="media__item-img media__item-img--panorama" src="img/panorama-mobile@1x.jpg" width="320" height="137" srcset="img/panorama-mobile@2x.jpg 2x" alt="panorama-img">
+						</picture>
+					</a>
+					<div class="media__wrapper-inner media__wrapper-inner--panorama wrapper-inner-global">
+						<span class="media__item-panorama-text">
               Панорама дня
             </span>
-            <picture>
-			 				<source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-              <img class="media__item-img media__item-img--panorama" src="img/panorama-mobile@1x.jpg" width="320" height="137" srcset="img/panorama-mobile@2x.jpg 2x" alt="panorama-img">
-            </picture>
-          </a>
-					<div class="media__wrapper-inner wrapper-inner-global">
 						<div class="media__item-desc-block media__item-desc-block--panorama">
 							<div class="media__item-desc-block-wrapper media__item-desc-block-wrapper--panorama">
 								<div class="media__item-author-block media__item-author-block--panorama">
@@ -364,7 +364,7 @@
 
 	<footer class="page-footer">
 		<div class="page-footer__wrapper wrapper-global">
-			<div class="page-footer__inner-wrapper">
+			<div class="page-footer__inner-wrapper wrapper-inner-global">
 				<a href="index.html" class="page-footer__logo-link">
           <svg version="1.1" id="page-footer__logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
           <g>
