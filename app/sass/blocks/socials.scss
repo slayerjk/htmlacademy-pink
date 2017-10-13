@@ -39,5 +39,8 @@
 @media #{$desktop} {
   .socials {
     margin-left: 235px;
-  }
+		&--not-index {
+			margin-left: 239px;
+		}
+	}
 }

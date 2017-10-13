@@ -555,6 +555,7 @@
 	}
 	
 	.media__post-photo {
+		padding-bottom: 26px;
 		background-color: #fff;
 	}
 	
@@ -570,7 +571,6 @@
 			right: 60px;
 		}
 		background-color: $color-grey;
-		outline: 1px solid red;
 	}
 
 	.media__post-img {
@@ -583,103 +583,81 @@
 	.media__post-manage {
 		width: 412px;
 		height: 460px;
-		outline: 1px solid red;
 	}
 	
 	.media__post-controls {
-		padding-top: 53px;	
+		padding-top: 41px;	
 	}
 	
 	.media__post-control {
-		height: 56px;
-		margin-bottom: 18px;
+		height: 71px;
+		margin-bottom: 0px;
 		padding: 0;
-		border-bottom: 1px solid #dddfe0;
-		outline: 1px solid red;
-		&:last-of-type {
-			margin-bottom: 0;
-		}
 	}
 
 	.editor-icon {
 		width: 47px;
+		&--crop {
+			padding: {
+				top: 12px;
+			}
+		}
 		&--fill {
 			padding: {
-				top: 0px;
+				top: 15px;
 				left: 2px;
 			}
 		}
 		&--contrast {
 			width: 34px;
 			padding: {
-				top: 0px;
+				top: 18px;
 				left: 7px;
 			}
 		}
 	}
 
 	.media__editor-scale {
-		position: absolute;
-		top: 2px;
+		top: 16px;
 		left: 55px;
 		height: 20px;
-		&--tablet-version {
-			display: block;
-		}
-		&--mobile-version {
-			display: none;
-		}
 		&::before {
-			left: 25%;
-			width: 203px; //87.5%;
-			transform: none;
+			left: 39px;
+			width: 288px;
 		}
-		&::after {
-			left: 0%;
-		}
-		&--tablet-version-crop {
-			padding-top: 14px;
+		&--crop {
+			&::before {
+				top: 19px;
+			}
 			&::after {
-				left: 147px;
+				left: 109px;
 			}
 		}
-		&--tablet-version-fill {
-			padding-top: 19px;
-			&::after {
-				left: 26px;
-			}
+		&--fill::after {
+			left: 285px;
 		}
-		&--tablet-version-contrast {
-			padding-top: 19px;
+		&--contrast {
+			&::before {
+				top: 18px;
+			}
 			&::after {
-				left: 97px;
+				left: 197px;
 			}
 		}
 	}
 
 	.media__buttons-block {
-		position: absolute;
-		bottom: 56px;
-		left: 55.5%;
-		flex-direction: column;
-		justify-content: flex-start;
-		align-items: stretch;
-		width: 260px;
-		padding: {
-			top: 0px;
-			bottom: 0px;
-			left: 0;
-			right: 0;
-		}
-		border-top: none;
-		transform: translateX(0%);
+		bottom: 80px;
+		left: 50%;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+		width: 410px;
+		padding: 0;
 	}
 
 	.media__post-btn {
-		margin-bottom: 22px;
-		padding: {
-			top: 15px;
-			bottom: 17px;
-		}
+		width: 183px;
+		margin-bottom: 0px;
 	}
 }
