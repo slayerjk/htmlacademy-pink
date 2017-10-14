@@ -42,12 +42,13 @@
 .page-footer__made-by {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
   width: 130px;
   height: 35px;
 }
 
 .page-footer__made-by-text {
+	padding-top: 6px;
   font: 1.4em/1.2857142857em $font-open-sans;//14/18
   color: $color-indigo;
 }
@@ -130,6 +131,7 @@
   }
   
   .page-footer__made-by-text {
+		padding-top: 0px;
     font-size: 1.8em;
     line-height: 1em;//18
   }

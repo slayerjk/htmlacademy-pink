@@ -409,3 +409,134 @@
     margin-bottom: 0px;
   }
 }
+
+//Desktop (1200px)
+@media #{$desktop} {
+	.contest__form {
+		flex-direction: row;
+    justify-content: space-between;
+		align-items: flex-start;
+		flex-wrap: wrap;
+    padding: 0;
+	}
+	
+	.contest__form-section {
+		width: 100%;
+		height: auto;
+		margin-bottom: 65px;
+		padding: 0;
+		padding: {
+			top: 25px;
+		}
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+		&--user {
+			width: 435px;
+			margin-bottom: 14px;
+		}
+		&--os {
+			position: relative;
+			top: 20px;
+			width: 430px;
+			padding: {
+				top: 40px;
+				bottom: 40px;
+			}
+		}
+		&--contact-data {
+			padding: {
+				bottom: 13px;
+			}
+		}
+		&--achievements {
+			padding: {
+				bottom: 10px;
+			}
+		}
+	}
+	
+	.contest__form-section-wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: stretch;
+		flex-wrap: wrap;
+		padding: {
+			left: 58px;
+			right: 58px;
+		}
+		&--achievements {
+			justify-content: flex-start;
+			padding: {
+				top: 13px;
+				right: 0;
+			}
+			outline: 1px solid red;
+		}
+	}
+	
+	.contest__form-block {
+		outline: 1px solid red;
+		&--os {
+			padding: {
+				left: 73px;
+			}
+		}
+		&--contacts {
+			width: 377px;
+			margin-bottom: 0;
+		}
+		&--shark {
+			order: 1;
+			width: 314px;
+		}
+		&--sunburn {
+			order: 4;
+			width: 314px;
+		}
+		&--chuck {
+			order: 2;
+			width: 295px;
+		}
+		&--gifts {
+			order: 5;
+			width: 295px;
+		}
+		&--tower {
+			order: 3;
+			width: 230px;
+		}
+		&--hotel {
+			order: 6;
+			width: 230px;
+		}
+		&--describe-emotions {
+			width: 100%;
+		}
+	}
+	
+	.contest__form-section-title {
+  	top: -35px;
+    padding: {
+      left: 3.5%;
+      right: 3.5%;
+    }
+		 &--os {
+			 top: -50px;
+			 padding: {
+      	left: 6%;
+      	right: 6%;
+    	}
+		}
+  }
+	
+	.contest__input-icon-block {
+    top: 0px;
+    left: 313px;
+  }
+	
+	.contest__input--describe-emotions {
+		min-height: 127px;
+	}
+}
