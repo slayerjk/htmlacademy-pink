@@ -201,6 +201,9 @@
   &--pink {
     color: $color-pink
   }
+	&--visible-4-desktop {
+		display: none;
+	}
 }
 
 //Tablet(660px)
@@ -350,6 +353,7 @@
       margin-bottom: 10px;
       padding: {
         left: 18px;
+				right: 32px;
       }
     }
     &--describe-emotions {
@@ -454,6 +458,9 @@
 				bottom: 10px;
 			}
 		}
+		&--emotions {
+			margin-bottom: 40px;
+		}
 	}
 	
 	.contest__form-section-wrapper {
@@ -472,12 +479,13 @@
 				top: 13px;
 				right: 0;
 			}
-			outline: 1px solid red;
+		}
+		&--emotions {
+			height: 170px;
 		}
 	}
 	
 	.contest__form-block {
-		outline: 1px solid red;
 		&--os {
 			padding: {
 				left: 73px;
@@ -538,5 +546,15 @@
 	
 	.contest__input--describe-emotions {
 		min-height: 127px;
+	}
+	
+	.contest__form-submit {
+    width: 300px;
+  }
+	
+	.contest__form-required-text {
+		&--visible-4-desktop {
+			display: inline;
+		}	
 	}
 }

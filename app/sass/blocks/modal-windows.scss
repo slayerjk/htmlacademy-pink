@@ -106,3 +106,37 @@
     width: 65%;
   }
 }
+
+//Desktop (1200px)
+@media #{$desktop} {
+	.modal-window {
+    padding: {
+      top: 34px;
+    }
+		&--error-window {
+			max-width: 460px;
+		}
+    &--success-window {
+			max-width: 780px;
+      padding: {
+				top: 40px;
+      }
+    }
+  }
+	
+	.modal-window__desc {
+    &--success {
+      margin-bottom: 39px;
+			padding: {
+      	left: 190px;
+      	right: 190px;
+    	}
+    }
+  }
+	
+	.modal-window__btn {
+		&--close {
+			width: 460px;
+		}
+  }
+}
