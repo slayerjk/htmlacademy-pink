@@ -15,7 +15,7 @@
   &--active {
     width: 24px;
     height: 24px;
-    background: url("../img/icons/icon-menu-cross.svg") no-repeat center;
+		background: url("../img/icons/icon-menu-cross.svg") no-repeat center;
   }
 }
 
@@ -65,15 +65,13 @@
   }
 }
 
-
 //Tablet (660px)
 @media #{$tablet} {
   .main-nav__menu-toggle {
-    position: absolute;
     top: 44px;
     right: 3%;
     &--active {
-      right: 0.9%;
+      right: 3%;
     }
   } 
   
@@ -84,6 +82,9 @@
       right: 3%;
       bottom: 39px;
     }
+		&--js-mobile {
+    	width: 94%;
+		}
   }
   
   .main-nav__logo-img {
