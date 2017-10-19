@@ -32,6 +32,10 @@
   }
 }
 
+.desc-block__text-transfer-visible-4-desktop {
+	display: none;
+}
+
 //Tablet(660px)
 @media #{$tablet} {
   .desc-block {
@@ -68,8 +72,8 @@
     padding: {
       top: 92px;
       bottom: 88px;
-    	left: 635px;
-			right: 635px;
+    	left: 130px;
+			right: 130px;
     }
     &--video {
       padding: {
@@ -80,8 +84,6 @@
     &--contest {
 			padding: {
 				bottom: 60px;
-				left: 550px;
-				right: 550px;
 			} 
     }
   }
@@ -90,5 +92,9 @@
 		&--contest {
 			display: inline;
 		}
+	}
+	
+	.desc-block__text-transfer-visible-4-desktop {
+		display: inline;
 	}
 }

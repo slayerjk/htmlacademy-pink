@@ -18,10 +18,10 @@
 
 .map__link {
   width: 100%;
-  height: 100%;
+  height: 200px;
   background: #fff url("../../img/bg-map-mobile.png") no-repeat center 100%;
   background-size: cover;
-  &::before,
+	&::before,
   &::after {
     @include pseudo;
     top: 111px;
@@ -81,14 +81,13 @@
   }
   
   .map__decor {
-    top: -25px;
+    top: -37px;
     height: 162px;
     background: url("../../img/bg-triangle-white-footer.svg") no-repeat center 100%;
     background-size: cover;
   }
   
   .map__link {
-    width: 1200px;
     height: 976px;
     background: url("../../img/bg-map-desktop@1x.jpg") no-repeat center -255px;
     background-size: contain;

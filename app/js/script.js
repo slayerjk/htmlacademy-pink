@@ -122,9 +122,9 @@ $(document).ready(function () {
 		}
 	};
 
-	/*  
+	
 	setInterval($.fn.slider1Switcher, 3000);
-	*/
+	
 	/*
 	setInterval($.fn.slider2Switcher, 4000);
 	*/
