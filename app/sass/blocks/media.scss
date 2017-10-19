@@ -86,7 +86,7 @@
 	font: 1.2em/2em $font-open-sans; //12/24
 	text-transform: uppercase;
 	color: $color-pink;
-	background: url("../../img/icons/icon-heart.svg") no-repeat 0% center;
+	background: url("../img/icons/icon-heart.svg") no-repeat 0% center;
 }
 
 .media__post-photo {
@@ -332,7 +332,7 @@
 		padding: {
 			left: 0%;
 		}
-		background: url("../../img/icons/icon-heart.svg") no-repeat 100% center;
+		background: url("../img/icons/icon-heart.svg") no-repeat 100% center;
 		&--panorama {
 			padding: {
 				left: 0;

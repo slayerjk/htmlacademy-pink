@@ -6,22 +6,22 @@
   height: 401px;
   background-color: #1d2631;
   background: 
-    url("../../img/iphone-hand-mobile@1x.png") no-repeat 0% 93%,
-    url("../../img/bg-back-mobile@1x.jpg") no-repeat center 111%;
+    url("../img/iphone-hand-mobile@1x.png") no-repeat 0% 93%,
+    url("../img/bg-back-mobile@1x.jpg") no-repeat center 111%;
   &--not-index {
     height: 168px;
-    background: url("../../img/bg-back-mobile@1x.jpg") no-repeat center 24%;
+    background: url("../img/bg-back-mobile@1x.jpg") no-repeat center 24%;
   }
   &--js-mobile {
 		height: 461px;
 		background: 
-    	url("../../img/iphone-hand-mobile@1x.png") no-repeat 0% 100%,
-    	url("../../img/bg-back-mobile@1x.jpg") no-repeat center 0%;
+    	url("../img/iphone-hand-mobile@1x.png") no-repeat 0% 100%,
+    	url("../img/bg-back-mobile@1x.jpg") no-repeat center 0%;
   	}
 	&--js-mobile-not-index {
 		height: 170px;
 		padding-top: 60px;
-		background: url("../../img/bg-back-mobile@1x.jpg") no-repeat center 0%;
+		background: url("../img/bg-back-mobile@1x.jpg") no-repeat center 0%;
   }
 }
 
@@ -123,26 +123,26 @@
     height: 618px;
     background-color: #1d2631;
     background: 
-      url("../../img/iphone-hand-tablet@1x.png") no-repeat 51% 100%,
-      url("../../img/bg-back-tablet@1x.jpg") no-repeat center 100%;
+      url("../img/iphone-hand-tablet@1x.png") no-repeat 51% 100%,
+      url("../img/bg-back-tablet@1x.jpg") no-repeat center 100%;
 		outline: 1px solid red;
     &--not-index {
       height: 288px;
       padding: {
         top: 40px;
       }
-      background: url("../../img/bg-back-tablet@1x.jpg") no-repeat center 28%;
+      background: url("../img/bg-back-tablet@1x.jpg") no-repeat center 28%;
     }
 		&--js-mobile {
 			height: 717px;
 			background: 
-      	url("../../img/iphone-hand-tablet@1x.png") no-repeat 51% 100%,
-      	url("../../img/bg-back-tablet@1x.jpg") no-repeat center 0%;
+      	url("../img/iphone-hand-tablet@1x.png") no-repeat 51% 100%,
+      	url("../img/bg-back-tablet@1x.jpg") no-repeat center 0%;
   	}
 		&--js-mobile-not-index {
 			height: 248px;
 			padding-top: 80px;
-			background: url("../../img/bg-back-tablet@1x.jpg") no-repeat center 0%;
+			background: url("../img/bg-back-tablet@1x.jpg") no-repeat center 0%;
 		}
   }
   
@@ -207,13 +207,13 @@
   @media #{$retina} {
     .intro__block-bg {
       background: 
-        url("../../img/iphone-hand-tablet@2x.png") no-repeat 51% 100%,
-        url("../../img/bg-back-tablet@2x.jpg") no-repeat center 100%;
+        url("../img/iphone-hand-tablet@2x.png") no-repeat 51% 100%,
+        url("../img/bg-back-tablet@2x.jpg") no-repeat center 100%;
       background-size: 
         700px auto, 
         1200px auto;
       &--not-index {
-        background: url("../../img/bg-back-tablet@2x.jpg") no-repeat center 24%;
+        background: url("../img/bg-back-tablet@2x.jpg") no-repeat center 24%;
         background-size: 1200px auto;
     }
     }
@@ -225,14 +225,14 @@
   .intro__block-bg {
     height: 853px;
     background: 
-      url("../../img/iphone-hand-desktop@1x.png") no-repeat 58.5% 100%,
-      url("../../img/bg-back-desktop@1x.jpg") no-repeat center 100%;
+      url("../img/iphone-hand-desktop@1x.png") no-repeat 58.5% 100%,
+      url("../img/bg-back-desktop@1x.jpg") no-repeat center 100%;
     &--not-index {
       height: 254px;
       padding: {
         top: 140px;
       }
-      background: url("../../img/bg-back-desktop@1x.jpg") no-repeat center 28%;
+      background: url("../img/bg-back-desktop@1x.jpg") no-repeat center 28%;
     }
   }
   
@@ -289,13 +289,13 @@
   @media #{$retina} {
     .intro__block-bg {
       background: 
-        url("../../img/iphone-hand-desktop@1x.png") no-repeat 58.5% 100%,
-        url("../../img/bg-back-desktop@1x.jpg") no-repeat center 100%;
+        url("../img/iphone-hand-desktop@1x.png") no-repeat 58.5% 100%,
+        url("../img/bg-back-desktop@1x.jpg") no-repeat center 100%;
       background-size: 
         1050px auto, 
         2560px auto;
       &--not-index {
-        background: url("../../img/bg-back-desktop@1x.jpg") no-repeat center 28%;
+        background: url("../img/bg-back-desktop@1x.jpg") no-repeat center 28%;
         background-size: 2560px auto;
       }
     }
